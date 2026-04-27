@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "eyebrow": "B2B technology consultancy · Kenya · UAE · Kyrgyzstan",
+    "headline": "Architecting the digital landscape of tomorrow.",
+    "subhead": "We help mid-to-large enterprises, financial institutions, and government clients move to cloud, modernize core systems, and tighten security — without the consultancy theatre.",
+    "primaryCta": { "label": "Talk to us", "href": "/contact" },
+    "secondaryCta": { "label": "What we do", "href": "/services" }
+  },
+  "positioning": {
+    "eyebrow": "What we do",
+    "title": "A turnkey software, cyber AIOps, and security partner.",
+    "body": "Vergent bridges business and technology. We define what good looks like with you, deliver against it, and stay close enough to the work that you don't have to translate between strategy decks and production systems."
+  },
+  "approach": {
+    "eyebrow": "How we work",
+    "title": "Embedded with your team, accountable to outcomes.",
+    "bullets": [
+      "Aligning security models with SABSA, ITIL, and COBIT",
+      "Comprehensive enterprise security architecture reviews",
+      "System configuration assessments",
+      "IT licence audits and rationalization",
+      "IT operations consulting",
+      "Project and vendor management",
+      "Supplier selection and contract negotiation"
+    ]
+  },
+  "cta": {
+    "title": "Have a transformation in motion or about to start?",
+    "body": "Send a short note about what you're working on. We'll come back inside two business days.",
+    "label": "Get in touch"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "eyebrow": "Contact",
+    "headline": "Tell us what you're working on.",
+    "subhead": "A short note about the problem you're trying to solve goes a long way. We'll come back inside two business days with whoever on the team is the right fit."
+  },
+  "form": {
+    "successTitle": "Message received.",
+    "successBody": "Thanks for reaching out. Someone from Vergent will reply within two business days.",
+    "errorTitle": "Something went wrong.",
+    "errorBody": "Please try again, or email info@vergent.co.ke directly."
+  }
+}

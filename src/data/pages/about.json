@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "eyebrow": "About Vergent",
+    "headline": "We build solutions driven by what comes next.",
+    "subhead": "Established to steer customers through the next generation of software, business, and security innovation — bridging the gap between business and technology, not standing between them."
+  },
+  "narrative": {
+    "eyebrow": "Who we are",
+    "title": "A B2B technology consultancy with delivery in five countries.",
+    "paragraphs": [
+      "Vergent Technology Solutions Ltd. helps clients leverage new technologies to competitive advantage and supports them through software development, cloud transformation, and security work.",
+      "Our capabilities are uniquely distinguished by where we deliver from. With teams across Kenya, Kyrgyzstan, the Philippines, and India, we run continuous engagements with senior people in your time zone — not handoff queues across vendors.",
+      "Most of our work is repeat business. Almost all of it ships to production."
+    ]
+  },
+  "expertise": {
+    "eyebrow": "Expertise",
+    "title": "Comprehensive expertise across the platforms enterprises rely on.",
+    "items": [
+      {
+        "title": "Microsoft cloud and Dynamics",
+        "body": "Azure landing zones, Office 365 governance, and Dynamics 365 implementations that align to how your business actually runs."
+      },
+      {
+        "title": "Oracle license rationalization",
+        "body": "Strategic license management for Oracle environments — fewer surprises at audit time, lower spend the rest of the year."
+      },
+      {
+        "title": "SAP modernization",
+        "body": "Transition to SAP S/4HANA cloud solutions with a delivery plan that respects the integrations holding your operations together."
+      },
+      {
+        "title": "AWS optimization",
+        "body": "Tailor AWS usage for performance and cost efficiency. Reserved instances, right-sizing, and the unglamorous bits that move the bill."
+      },
+      {
+        "title": "Software licensing assessment",
+        "body": "Maximize the value of your software licenses while ensuring compliance — across Microsoft, Oracle, SAP, and the long tail."
+      }
+    ]
+  },
+  "approach": {
+    "eyebrow": "How we work",
+    "title": "Embedded delivery, accountable to outcomes.",
+    "bullets": [
+      "Aligning security models with SABSA, ITIL, and COBIT",
+      "Comprehensive enterprise security architecture reviews",
+      "System configuration assessments",
+      "IT licence audits",
+      "IT operations consulting",
+      "Project management",
+      "Vendor management and supplier selection"
+    ]
+  }
+}

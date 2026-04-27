@@ -1,0 +1,18 @@
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+# Long cache for build assets (Astro hashes filenames).
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Don't cache the editor shell or its config.
+/admin/*
+  Cache-Control: no-cache
+  X-Frame-Options: DENY
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600

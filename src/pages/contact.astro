@@ -1,0 +1,47 @@
+---
+import Base from '../layouts/Base.astro';
+import ContactForm from '../components/ContactForm.astro';
+import OfficeList from '../components/OfficeList.astro';
+import contact from '../data/pages/contact.json';
+import site from '../data/site.json';
+---
+
+<Base title="Contact">
+  <!-- HERO -->
+  <section class="container-content pt-section md:pt-section-lg pb-section">
+    <p class="eyebrow">{contact.hero.eyebrow}</p>
+    <h1 class="mt-6 max-w-3xl text-display font-display font-semibold">{contact.hero.headline}</h1>
+    <p class="mt-6 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">{contact.hero.subhead}</p>
+  </section>
+
+  <!-- FORM + DETAILS -->
+  <section class="hairline">
+    <div class="container-content grid gap-12 py-section md:grid-cols-[1.4fr,1fr] md:py-section-lg">
+      <div class="rounded-lg border border-border bg-card p-8 md:p-10 shadow-soft">
+        <ContactForm />
+      </div>
+
+      <aside class="space-y-10">
+        <div>
+          <p class="eyebrow">Direct</p>
+          <ul class="mt-4 space-y-3 text-base">
+            <li>
+              <a href={`mailto:${site.contact.email}`} class="font-display text-lg font-semibold text-ink hover:text-accent">{site.contact.email}</a>
+              <p class="mt-1 text-sm text-muted">For new enquiries and partnership questions.</p>
+            </li>
+            <li>
+              <a href={site.contact.phoneHref} class="font-display text-lg font-semibold text-ink hover:text-accent">{site.contact.phone}</a>
+              <p class="mt-1 text-sm text-muted">Nairobi business hours, EAT.</p>
+            </li>
+            <li>
+              <a href={site.contact.linkedin} target="_blank" rel="noopener" class="font-display text-lg font-semibold text-ink hover:text-accent">LinkedIn</a>
+              <p class="mt-1 text-sm text-muted">Follow for company updates and roles.</p>
+            </li>
+          </ul>
+        </div>
+
+        <OfficeList title="Offices" />
+      </aside>
+    </div>
+  </section>
+</Base>

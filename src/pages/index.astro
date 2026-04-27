@@ -1,0 +1,115 @@
+---
+import Base from '../layouts/Base.astro';
+import ServicesGrid from '../components/ServicesGrid.astro';
+import PartnerLogos from '../components/PartnerLogos.astro';
+import home from '../data/pages/home.json';
+import site from '../data/site.json';
+---
+
+<Base>
+  <!-- HERO -->
+  <section class="container-content pt-section md:pt-section-lg pb-section">
+    <p class="eyebrow reveal-on-scroll">{home.hero.eyebrow}</p>
+    <h1 class="mt-6 max-w-4xl text-display-xl font-display font-semibold reveal-on-scroll">
+      {home.hero.headline}
+    </h1>
+    <p class="mt-6 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8 reveal-on-scroll">
+      {home.hero.subhead}
+    </p>
+    <div class="mt-10 flex flex-wrap items-center gap-3">
+      <a href={home.hero.primaryCta.href} class="btn btn-primary">
+        {home.hero.primaryCta.label}
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M13 6l6 6-6 6"></path>
+        </svg>
+      </a>
+      <a href={home.hero.secondaryCta.href} class="btn btn-secondary">
+        {home.hero.secondaryCta.label}
+      </a>
+    </div>
+
+    <!-- Office line -->
+    <div class="mt-16 flex flex-wrap items-center gap-x-8 gap-y-2 border-t border-border pt-8 text-sm text-muted">
+      <span class="text-xs uppercase tracking-[0.12em]">Offices</span>
+      {site.offices.map((o, i) => (
+        <span class="inline-flex items-center gap-2">
+          <span class="text-ink">{o.city}</span>
+          <span class="text-muted">{o.country}</span>
+        </span>
+      ))}
+    </div>
+  </section>
+
+  <!-- POSITIONING -->
+  <section class="hairline">
+    <div class="container-content grid gap-12 py-section md:grid-cols-[1fr,1.4fr] md:py-section-lg">
+      <div>
+        <p class="eyebrow">{home.positioning.eyebrow}</p>
+        <h2 class="mt-3 text-h2 font-display font-semibold">
+          {home.positioning.title}
+        </h2>
+      </div>
+      <p class="text-base leading-7 text-muted md:text-lg md:leading-8">
+        {home.positioning.body}
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES (compact, hides per-card bullets) -->
+  <div class="hairline">
+    <ServicesGrid variant="compact" />
+    <div class="container-content -mt-6 pb-section">
+      <a href="/services" class="btn btn-link inline-flex items-center gap-2">
+        See full services
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M13 6l6 6-6 6"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- APPROACH -->
+  <section class="hairline">
+    <div class="container-content py-section md:py-section-lg">
+      <div class="max-w-2xl">
+        <p class="eyebrow">{home.approach.eyebrow}</p>
+        <h2 class="mt-3 text-h2 font-display font-semibold">{home.approach.title}</h2>
+      </div>
+      <ul class="mt-10 grid gap-x-12 gap-y-3 md:grid-cols-2">
+        {home.approach.bullets.map((b) => (
+          <li class="flex gap-3 border-t border-border py-4 text-base text-ink">
+            <span aria-hidden="true" class="mt-3 h-1 w-1 flex-shrink-0 rounded-full bg-accent"></span>
+            <span>{b}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <div class="hairline">
+    <PartnerLogos />
+  </div>
+
+  <!-- CTA -->
+  <section class="hairline">
+    <div class="container-content py-section md:py-section-lg">
+      <div class="rounded-lg border border-border bg-card p-10 md:p-14 shadow-soft">
+        <div class="grid gap-8 md:grid-cols-[1.5fr,1fr] md:items-end">
+          <div>
+            <h2 class="text-h2 font-display font-semibold">{home.cta.title}</h2>
+            <p class="mt-3 max-w-xl text-base text-muted">{home.cta.body}</p>
+          </div>
+          <div class="md:text-right">
+            <a href="/contact" class="btn btn-primary">
+              {home.cta.label}
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M13 6l6 6-6 6"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

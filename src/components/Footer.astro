@@ -1,0 +1,41 @@
+---
+import site from '../data/site.json';
+const year = new Date().getFullYear();
+---
+
+<footer class="hairline mt-section-xl">
+  <div class="container-content grid gap-10 py-16 md:grid-cols-[1.4fr,1fr,1fr]">
+    <div>
+      <div class="flex items-baseline gap-1 text-lg font-display font-semibold tracking-tight">
+        <span class="text-ink">Vergent</span>
+        <span aria-hidden="true" class="text-accent">.</span>
+      </div>
+      <p class="mt-3 max-w-sm text-sm text-muted">
+        {site.brand.legalName} — {site.brand.tagline}.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-eyebrow font-medium uppercase tracking-[0.12em] text-muted">Contact</h3>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li><a href={`mailto:${site.contact.email}`} class="hover:text-accent">{site.contact.email}</a></li>
+        <li><a href={site.contact.phoneHref} class="hover:text-accent">{site.contact.phone}</a></li>
+        <li><a href={site.contact.linkedin} target="_blank" rel="noopener" class="hover:text-accent">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-eyebrow font-medium uppercase tracking-[0.12em] text-muted">Offices</h3>
+      <ul class="mt-3 space-y-2 text-sm text-muted">
+        {site.offices.map((o) => (
+          <li><span class="text-ink">{o.city}</span>, {o.country}</li>
+        ))}
+      </ul>
+    </div>
+  </div>
+
+  <div class="container-content flex flex-col items-start justify-between gap-3 border-t border-border py-6 text-xs text-muted md:flex-row md:items-center">
+    <p>© {year} {site.footer.copyrightHolder} {site.footer.rightsLine}</p>
+    <p>Round-the-clock support across {site.offices.map((o) => o.city).join(' · ')} · {site.supportPresence.join(' · ')}</p>
+  </div>
+</footer>

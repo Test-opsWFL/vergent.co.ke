@@ -1,0 +1,73 @@
+---
+import Base from '../layouts/Base.astro';
+import ServicesGrid from '../components/ServicesGrid.astro';
+---
+
+<Base title="Services">
+  <!-- HERO -->
+  <section class="container-content pt-section md:pt-section-lg pb-section">
+    <p class="eyebrow">Services</p>
+    <h1 class="mt-6 max-w-4xl text-display font-display font-semibold">
+      What we deliver.
+    </h1>
+    <p class="mt-6 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
+      Three practices, run by the same delivery model: senior people, embedded with your team, accountable to outcomes you can show your board.
+    </p>
+  </section>
+
+  <!-- SERVICES (full, with bullets) -->
+  <div class="hairline">
+    <ServicesGrid variant="full" showHeader={false} />
+  </div>
+
+  <!-- ENGAGEMENT MODEL -->
+  <section class="hairline">
+    <div class="container-content py-section md:py-section-lg">
+      <div class="grid gap-12 md:grid-cols-[1fr,1.4fr]">
+        <div>
+          <p class="eyebrow">Engagement model</p>
+          <h2 class="mt-3 text-h2 font-display font-semibold">Three ways to work with us.</h2>
+        </div>
+        <dl class="space-y-8">
+          <div class="border-t border-border pt-6">
+            <dt class="font-display text-lg font-semibold text-ink">Architecture review</dt>
+            <dd class="mt-2 text-sm leading-6 text-muted">
+              Two-to-six week assessment of your current state — cloud, security, licensing, or all three. You leave with a defensible plan and a costed roadmap, not a slide deck.
+            </dd>
+          </div>
+          <div class="border-t border-border pt-6">
+            <dt class="font-display text-lg font-semibold text-ink">Project delivery</dt>
+            <dd class="mt-2 text-sm leading-6 text-muted">
+              Fixed-scope or time-and-materials engagements for migrations, implementations, and software builds. We staff for the work, not for the org chart.
+            </dd>
+          </div>
+          <div class="border-t border-border pt-6">
+            <dt class="font-display text-lg font-semibold text-ink">Managed services</dt>
+            <dd class="mt-2 text-sm leading-6 text-muted">
+              Ongoing operations across cloud, security, and ITSM — round-the-clock support coordinated across our offices. Predictable monthly retainers, not per-incident surprise bills.
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="hairline">
+    <div class="container-content py-section md:py-section-lg">
+      <div class="rounded-lg border border-border bg-card p-10 md:p-14 shadow-soft">
+        <div class="grid gap-6 md:grid-cols-[1.5fr,1fr] md:items-center">
+          <div>
+            <h2 class="text-h2 font-display font-semibold">Have a specific problem in mind?</h2>
+            <p class="mt-3 text-base text-muted">
+              Tell us what you're working on. We'll come back inside two business days with whoever on the team is the right fit.
+            </p>
+          </div>
+          <div class="md:text-right">
+            <a href="/contact" class="btn btn-primary">Talk to us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

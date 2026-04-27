@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Page not found">
+  <section class="container-content py-section-xl">
+    <p class="eyebrow">404</p>
+    <h1 class="mt-6 max-w-3xl text-display font-display font-semibold">
+      We couldn't find that page.
+    </h1>
+    <p class="mt-6 max-w-xl text-base text-muted md:text-lg">
+      The link may have moved, or it never existed. Either way, here are some places to start over.
+    </p>
+    <div class="mt-10 flex flex-wrap gap-3">
+      <a href="/" class="btn btn-primary">Back to home</a>
+      <a href="/services" class="btn btn-secondary">See services</a>
+      <a href="/contact" class="btn btn-secondary">Contact us</a>
+    </div>
+  </section>
+</Base>

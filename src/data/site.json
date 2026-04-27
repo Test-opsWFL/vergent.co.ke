@@ -1,0 +1,39 @@
+{
+  "brand": {
+    "name": "Vergent",
+    "fullName": "Vergent Technology Solutions",
+    "legalName": "Vergent Technology Solutions Ltd.",
+    "tagline": "Architecting the Digital Landscape of Tomorrow"
+  },
+  "nav": [
+    { "label": "About",    "href": "/about" },
+    { "label": "Services", "href": "/services" },
+    { "label": "Contact",  "href": "/contact" }
+  ],
+  "ctaLabel": "Let's talk",
+  "contact": {
+    "email": "info@vergent.co.ke",
+    "phone": "+254 (0)706 620 630",
+    "phoneHref": "tel:+254706620630",
+    "linkedin": "https://www.linkedin.com/company/vergent-technology/"
+  },
+  "offices": [
+    { "city": "Nairobi", "country": "Kenya" },
+    { "city": "Dubai",   "country": "UAE" },
+    { "city": "Bishkek", "country": "Kyrgyzstan" }
+  ],
+  "supportPresence": ["Philippines", "India"],
+  "partners": [
+    { "name": "Microsoft" },
+    { "name": "Oracle" },
+    { "name": "SAP" },
+    { "name": "Amazon Web Services" },
+    { "name": "Centerity" },
+    { "name": "Dreamvise" },
+    { "name": "SysAid" }
+  ],
+  "footer": {
+    "copyrightHolder": "Vergent Technology Solutions Ltd.",
+    "rightsLine": "All rights reserved."
+  }
+}

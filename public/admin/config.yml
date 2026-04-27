@@ -1,0 +1,196 @@
+backend:
+  name: github
+  repo: Test-opsWFL/vergent.co.ke
+  branch: main
+  # TODO (owner): once a GitHub OAuth app exists for Decap, set:
+  #   base_url: https://api.netlify.com (Netlify Identity)  OR
+  #   base_url: https://your-oauth-bridge.workers.dev       (Cloudflare Worker bridge)
+  # Until then, /admin will load but auth will fail. See README.md "Decap CMS — OAuth setup".
+
+# Optional: enable a public preview branch instead of writing direct to main.
+# publish_mode: editorial_workflow
+
+media_folder: public/uploads
+public_folder: /uploads
+
+site_url: https://vergent.co.ke
+display_url: https://vergent.co.ke
+logo_url: /favicon.svg
+
+collections:
+  # ── SITE-WIDE SETTINGS (single file) ─────────────────────────────
+  - name: site
+    label: Site settings
+    files:
+      - file: src/data/site.json
+        label: Brand, navigation, contact, offices
+        name: site
+        fields:
+          - { label: 'Brand name (short)',  name: 'brand.name',     widget: object, fields: [
+              { label: 'Display',  name: 'name',       widget: string },
+              { label: 'Full',     name: 'fullName',   widget: string },
+              { label: 'Legal',    name: 'legalName',  widget: string },
+              { label: 'Tagline',  name: 'tagline',    widget: string }
+            ]}
+          - label: 'Navigation links'
+            name: nav
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Href,  name: href,  widget: string }
+          - { label: 'Header CTA label', name: ctaLabel, widget: string }
+          - label: 'Contact'
+            name: contact
+            widget: object
+            fields:
+              - { label: Email,        name: email,    widget: string }
+              - { label: Phone,        name: phone,    widget: string }
+              - { label: 'Phone href', name: phoneHref, widget: string, hint: 'tel: link, e.g. tel:+254706620630' }
+              - { label: LinkedIn,     name: linkedin, widget: string }
+          - label: 'Offices'
+            name: offices
+            widget: list
+            fields:
+              - { label: City,    name: city,    widget: string }
+              - { label: Country, name: country, widget: string }
+          - { label: 'Round-the-clock support presence', name: supportPresence, widget: list, field: { label: Country, name: country, widget: string } }
+          - label: 'Partners'
+            name: partners
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+          - label: 'Footer'
+            name: footer
+            widget: object
+            fields:
+              - { label: 'Copyright holder', name: copyrightHolder, widget: string }
+              - { label: 'Rights line',      name: rightsLine,      widget: string }
+
+  # ── PAGE-LEVEL CONTENT (file collection) ─────────────────────────
+  - name: pages
+    label: Pages
+    files:
+      - file: src/data/pages/home.json
+        label: Home page
+        name: home
+        fields:
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Eyebrow,   name: eyebrow,   widget: string }
+              - { label: Headline,  name: headline,  widget: string }
+              - { label: Subhead,   name: subhead,   widget: text }
+              - label: 'Primary CTA'
+                name: primaryCta
+                widget: object
+                fields:
+                  - { label: Label, name: label, widget: string }
+                  - { label: Href,  name: href,  widget: string }
+              - label: 'Secondary CTA'
+                name: secondaryCta
+                widget: object
+                fields:
+                  - { label: Label, name: label, widget: string }
+                  - { label: Href,  name: href,  widget: string }
+          - label: Positioning
+            name: positioning
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Title,   name: title,   widget: string }
+              - { label: Body,    name: body,    widget: text }
+          - label: 'How we work'
+            name: approach
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Title,   name: title,   widget: string }
+              - { label: Bullets, name: bullets, widget: list, field: { label: Bullet, name: bullet, widget: string } }
+          - label: 'Bottom CTA'
+            name: cta
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Body,  name: body,  widget: text }
+              - { label: Label, name: label, widget: string }
+
+      - file: src/data/pages/about.json
+        label: About page
+        name: about
+        fields:
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Eyebrow,  name: eyebrow,  widget: string }
+              - { label: Headline, name: headline, widget: string }
+              - { label: Subhead,  name: subhead,  widget: text }
+          - label: Narrative
+            name: narrative
+            widget: object
+            fields:
+              - { label: Eyebrow,    name: eyebrow,    widget: string }
+              - { label: Title,      name: title,      widget: string }
+              - { label: Paragraphs, name: paragraphs, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+          - label: Expertise
+            name: expertise
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Title,   name: title,   widget: string }
+              - label: Items
+                name: items
+                widget: list
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Body,  name: body,  widget: text }
+          - label: 'How we work'
+            name: approach
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Title,   name: title,   widget: string }
+              - { label: Bullets, name: bullets, widget: list, field: { label: Bullet, name: bullet, widget: string } }
+
+      - file: src/data/pages/contact.json
+        label: Contact page
+        name: contact
+        fields:
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Eyebrow,  name: eyebrow,  widget: string }
+              - { label: Headline, name: headline, widget: string }
+              - { label: Subhead,  name: subhead,  widget: text }
+          - label: 'Form messaging'
+            name: form
+            widget: object
+            fields:
+              - { label: 'Success title', name: successTitle, widget: string }
+              - { label: 'Success body',  name: successBody,  widget: text }
+              - { label: 'Error title',   name: errorTitle,   widget: string }
+              - { label: 'Error body',    name: errorBody,    widget: text }
+
+  # ── SERVICES (folder collection, one Markdown file per service) ──
+  - name: services
+    label: Services
+    folder: src/content/services
+    create: true
+    slug: '{{slug}}'
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title,   name: title,   widget: string }
+      - { label: Summary, name: summary, widget: text, hint: 'One-paragraph summary used on cards.' }
+      - label: Group
+        name: group
+        widget: select
+        options:
+          - { label: 'Cloud & modernization',  value: 'cloud-modernization' }
+          - { label: 'Security & compliance',  value: 'security-compliance' }
+          - { label: 'Software & data',        value: 'software-data' }
+      - { label: Order,   name: order,   widget: number, default: 1, value_type: int }
+      - { label: Bullets, name: bullets, widget: list, field: { label: Bullet, name: bullet, widget: string } }
+      - { label: Body,    name: body,    widget: markdown, hint: 'Long-form description used on detail pages, if enabled.' }

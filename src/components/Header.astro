@@ -1,0 +1,77 @@
+---
+import site from '../data/site.json';
+import ThemeToggle from './ThemeToggle.astro';
+
+const { pathname } = Astro.url;
+const isActive = (href: string) =>
+  href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(href + '/');
+---
+
+<header class="sticky top-0 z-40 border-b border-border bg-surface/80 backdrop-blur supports-[backdrop-filter]:bg-surface/70">
+  <div class="container-content flex h-16 items-center gap-6">
+    <a href="/" class="flex items-baseline gap-1 text-lg font-display font-semibold tracking-tight">
+      <span class="text-ink">Vergent</span>
+      <span aria-hidden="true" class="text-accent">.</span>
+    </a>
+
+    <nav aria-label="Primary" class="ml-auto hidden items-center gap-1 md:flex">
+      {site.nav.map((item) => (
+        <a
+          href={item.href}
+          class:list={[
+            'rounded-md px-3 py-1.5 text-sm transition-colors',
+            isActive(item.href) ? 'text-ink' : 'text-muted hover:text-ink',
+          ]}
+          aria-current={isActive(item.href) ? 'page' : undefined}
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+
+    <div class="ml-auto flex items-center gap-2 md:ml-0">
+      <ThemeToggle />
+      <a href="/contact" class="btn btn-primary hidden md:inline-flex">{site.ctaLabel}</a>
+      <button
+        type="button"
+        id="mobile-menu-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        class="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-card text-ink md:hidden"
+      >
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 6h18M3 12h18M3 18h18"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="hidden border-t border-border bg-surface md:hidden">
+    <nav aria-label="Mobile" class="container-content flex flex-col py-4">
+      {site.nav.map((item) => (
+        <a
+          href={item.href}
+          class="rounded-md px-2 py-3 text-base text-ink hover:bg-card"
+          aria-current={isActive(item.href) ? 'page' : undefined}
+        >
+          {item.label}
+        </a>
+      ))}
+      <a href="/contact" class="btn btn-primary mt-3 w-full">{site.ctaLabel}</a>
+    </nav>
+  </div>
+</header>
+
+<script is:inline>
+  (function () {
+    const btn = document.getElementById('mobile-menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    if (!btn || !menu) return;
+    btn.addEventListener('click', function () {
+      const open = menu.classList.toggle('hidden') === false;
+      btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    });
+  })();
+</script>
