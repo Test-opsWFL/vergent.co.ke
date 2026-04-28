@@ -1,0 +1,59 @@
+---
+import site from '../data/site.json';
+
+const ribbon = site.ribbon;
+---
+
+{ribbon?.text && (
+  <div id="vrg-ribbon" class="bg-brand-navy text-white">
+    <div class="container-content flex items-center gap-3 py-2 text-xs sm:text-[13px]">
+      <span aria-hidden="true" class="hidden h-1.5 w-1.5 rounded-full bg-accent sm:inline-block flex-shrink-0"></span>
+      <p class="leading-snug truncate">
+        <span class="font-semibold tracking-wide uppercase text-accent mr-2">{ribbon.tag}</span>
+        <span class="text-white/85">{ribbon.text}</span>
+        {ribbon.linkLabel && ribbon.href && (
+          <a
+            href={ribbon.href}
+            target={ribbon.href.startsWith('http') ? '_blank' : undefined}
+            rel={ribbon.href.startsWith('http') ? 'noopener' : undefined}
+            class="ml-2 inline-flex items-center gap-1 font-medium text-white underline underline-offset-4 decoration-white/40 hover:decoration-accent hover:text-accent"
+          >
+            {ribbon.linkLabel}
+            <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M13 6l6 6-6 6"></path>
+            </svg>
+          </a>
+        )}
+      </p>
+      <button
+        type="button"
+        id="vrg-ribbon-dismiss"
+        aria-label="Dismiss announcement"
+        class="ml-auto inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-md text-white/70 hover:bg-white/10 hover:text-white"
+      >
+        <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 6l12 12M6 18 18 6"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+)}
+
+<script is:inline>
+  (function () {
+    var bar = document.getElementById('vrg-ribbon');
+    if (!bar) return;
+    try {
+      if (localStorage.getItem('vrg-ribbon-dismissed') === '1') {
+        bar.style.display = 'none';
+        return;
+      }
+    } catch (e) {}
+    var btn = document.getElementById('vrg-ribbon-dismiss');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      bar.style.display = 'none';
+      try { localStorage.setItem('vrg-ribbon-dismissed', '1'); } catch (e) {}
+    });
+  })();
+</script>

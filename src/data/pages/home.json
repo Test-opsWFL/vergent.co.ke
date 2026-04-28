@@ -1,32 +1,50 @@
 {
   "hero": {
-    "eyebrow": "B2B technology consultancy · Kenya · UAE · Kyrgyzstan",
+    "eyebrow": "Software · Cyber AIOps · Security",
     "headline": "Architecting the digital landscape of tomorrow.",
-    "subhead": "We help mid-to-large enterprises, financial institutions, and government clients move to cloud, modernize core systems, and tighten security — without the consultancy theatre.",
+    "subhead": "Cloud, modernization, and security work for enterprises, financial institutions, and government — delivered into production, not parked in a slide deck.",
     "primaryCta": { "label": "Talk to us", "href": "/contact" },
-    "secondaryCta": { "label": "What we do", "href": "/services" }
+    "secondaryCta": { "label": "Our products", "href": "/#products" }
   },
   "positioning": {
     "eyebrow": "What we do",
     "title": "A turnkey software, cyber AIOps, and security partner.",
-    "body": "Vergent bridges business and technology. We define what good looks like with you, deliver against it, and stay close enough to the work that you don't have to translate between strategy decks and production systems."
+    "body": "Vergent bridges business and technology. We define what good looks like, ship it, and stay close to the work — so you don't have to translate between strategy decks and production systems."
   },
   "approach": {
     "eyebrow": "How we work",
-    "title": "Embedded with your team, accountable to outcomes.",
-    "bullets": [
-      "Aligning security models with SABSA, ITIL, and COBIT",
-      "Comprehensive enterprise security architecture reviews",
-      "System configuration assessments",
-      "IT licence audits and rationalization",
-      "IT operations consulting",
-      "Project and vendor management",
-      "Supplier selection and contract negotiation"
+    "title": "Embedded with your team. Accountable to outcomes.",
+    "body": "We don't drop binders and disappear. Vergent teams sit alongside yours — defining the work, shipping it, and owning the result through go-live and beyond.",
+    "disciplines": [
+      {
+        "title": "Security architecture",
+        "summary": "Designs aligned to SABSA, ITIL, and COBIT — and to the auditors you actually answer to."
+      },
+      {
+        "title": "Architecture reviews",
+        "summary": "Enterprise security reviews and system configuration assessments against a defensible baseline."
+      },
+      {
+        "title": "Licence rationalisation",
+        "summary": "IT licence audits that reclaim spend and surface contract risk before renewal."
+      },
+      {
+        "title": "IT operations",
+        "summary": "Day-two consulting that keeps platforms healthy after the project closes."
+      },
+      {
+        "title": "Project & vendor management",
+        "summary": "A single accountable owner across SIs, internal teams, and external partners."
+      },
+      {
+        "title": "Sourcing & contracts",
+        "summary": "Supplier selection and negotiation — leverage on your side of the table."
+      }
     ]
   },
   "cta": {
     "title": "Have a transformation in motion or about to start?",
-    "body": "Send a short note about what you're working on. We'll come back inside two business days.",
+    "body": "A short note about what you're working on goes a long way. We come back inside two business days.",
     "label": "Get in touch"
   }
 }

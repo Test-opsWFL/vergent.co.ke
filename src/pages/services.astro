@@ -1,66 +1,127 @@
 ---
 import Base from '../layouts/Base.astro';
 import ServicesGrid from '../components/ServicesGrid.astro';
+
+const engagements = [
+  {
+    title: 'Architecture review',
+    duration: '2–6 weeks',
+    pricing: 'Fixed scope',
+    body: "An assessment of your current state — cloud, security, licensing, or all three. You leave with a defensible plan and a costed roadmap, not a slide deck.",
+  },
+  {
+    title: 'Project delivery',
+    duration: '3 months – 2 years',
+    pricing: 'Fixed-scope or T&M',
+    body: 'Migrations, implementations, and software builds. We staff for the work, not for the org chart. Senior people from kickoff to cutover.',
+  },
+  {
+    title: 'Managed services',
+    duration: 'Ongoing retainer',
+    pricing: 'Predictable monthly',
+    body: 'Round-the-clock cloud, security, and ITSM operations coordinated across our delivery hubs. No per-incident surprise bills.',
+  },
+];
+
+const proofPoints = [
+  { value: '10+', label: 'ERP & cloud platforms covered' },
+  { value: '12+', label: 'Compliance frameworks supported' },
+  { value: '5',   label: 'Delivery hubs across three continents' },
+  { value: '24/7', label: 'Round-the-clock operations cover' },
+];
 ---
 
 <Base title="Services">
   <!-- HERO -->
-  <section class="container-content pt-section md:pt-section-lg pb-section">
+  <section class="container-wide pt-section pb-section">
     <p class="eyebrow">Services</p>
-    <h1 class="mt-6 max-w-4xl text-display font-display font-semibold">
-      What we deliver.
+    <h1 class="mt-3 max-w-4xl text-display font-display font-semibold">
+      What we deliver — and how you'll know it landed.
     </h1>
-    <p class="mt-6 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
-      Three practices, run by the same delivery model: senior people, embedded with your team, accountable to outcomes you can show your board.
+    <p class="mt-4 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-7">
+      Three practices, one delivery model: senior people, embedded with your team, accountable to outcomes. No hand-offs to junior teams once the contract is signed.
     </p>
+    <div class="mt-6 flex flex-wrap items-center gap-3">
+      <a href="/contact" class="btn btn-primary">Talk to us</a>
+      <a href="/#products" class="btn btn-secondary">See our products</a>
+    </div>
   </section>
 
-  <!-- SERVICES (full, with bullets) -->
-  <div class="hairline">
-    <ServicesGrid variant="full" showHeader={false} />
-  </div>
+  <!-- PROOF STRIP -->
+  <section class="border-y border-border bg-card">
+    <div class="container-wide grid gap-6 py-7 md:grid-cols-4">
+      {proofPoints.map((p) => (
+        <div>
+          <p class="font-display text-3xl font-extrabold tracking-tight text-ink md:text-4xl">{p.value}</p>
+          <p class="mt-1 text-sm leading-snug text-muted">{p.label}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- SERVICES (full, with icons + outcomes) -->
+  <ServicesGrid variant="full" showHeader={false} wideContainer={true} />
 
   <!-- ENGAGEMENT MODEL -->
   <section class="hairline">
-    <div class="container-content py-section md:py-section-lg">
-      <div class="grid gap-12 md:grid-cols-[1fr,1.4fr]">
+    <div class="container-wide py-section">
+      <div class="grid gap-12 md:grid-cols-[1fr,1.6fr]">
         <div>
           <p class="eyebrow">Engagement model</p>
           <h2 class="mt-3 text-h2 font-display font-semibold">Three ways to work with us.</h2>
+          <p class="mt-4 text-base text-muted">
+            Pick the shape of engagement that fits the problem. We move freely between them once trust is established.
+          </p>
         </div>
-        <dl class="space-y-8">
-          <div class="border-t border-border pt-6">
-            <dt class="font-display text-lg font-semibold text-ink">Architecture review</dt>
-            <dd class="mt-2 text-sm leading-6 text-muted">
-              Two-to-six week assessment of your current state — cloud, security, licensing, or all three. You leave with a defensible plan and a costed roadmap, not a slide deck.
-            </dd>
-          </div>
-          <div class="border-t border-border pt-6">
-            <dt class="font-display text-lg font-semibold text-ink">Project delivery</dt>
-            <dd class="mt-2 text-sm leading-6 text-muted">
-              Fixed-scope or time-and-materials engagements for migrations, implementations, and software builds. We staff for the work, not for the org chart.
-            </dd>
-          </div>
-          <div class="border-t border-border pt-6">
-            <dt class="font-display text-lg font-semibold text-ink">Managed services</dt>
-            <dd class="mt-2 text-sm leading-6 text-muted">
-              Ongoing operations across cloud, security, and ITSM — round-the-clock support coordinated across our offices. Predictable monthly retainers, not per-incident surprise bills.
-            </dd>
-          </div>
-        </dl>
+
+        <div class="grid gap-px overflow-hidden rounded-lg border border-border bg-border">
+          {engagements.map((e) => (
+            <div class="bg-card p-6 md:p-8">
+              <div class="flex flex-wrap items-baseline justify-between gap-2">
+                <h3 class="font-display text-lg font-semibold text-ink">{e.title}</h3>
+                <span class="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-wider text-muted">
+                  <span class="rounded-md bg-accent-soft px-2 py-0.5 text-accent">{e.duration}</span>
+                  <span>·</span>
+                  <span>{e.pricing}</span>
+                </span>
+              </div>
+              <p class="mt-3 text-sm leading-6 text-muted">{e.body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE STAFF -->
+  <section class="hairline">
+    <div class="container-wide py-section">
+      <div class="grid gap-12 md:grid-cols-[1fr,1.4fr]">
+        <div>
+          <p class="eyebrow">How we staff</p>
+          <h2 class="mt-3 text-h2 font-display font-semibold">Senior people. From kickoff to cutover.</h2>
+        </div>
+        <div class="space-y-6 text-base leading-7 text-muted md:text-lg md:leading-8">
+          <p>
+            Every engagement is led by an architect or principal who's done the work before — not a partner who appears at the kickoff and a steerco, then disappears. Hand-offs are the most common reason consulting projects miss their dates; we don't do them.
+          </p>
+          <p>
+            Delivery is coordinated across <span class="text-ink font-medium">Nairobi · Dubai · Bishkek</span>, with round-the-clock support extending to Philippines and India. Same team, three time zones, one delivery plan.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
   <section class="hairline">
-    <div class="container-content py-section md:py-section-lg">
+    <div class="container-wide py-section">
       <div class="rounded-lg border border-border bg-card p-10 md:p-14 shadow-soft">
         <div class="grid gap-6 md:grid-cols-[1.5fr,1fr] md:items-center">
           <div>
             <h2 class="text-h2 font-display font-semibold">Have a specific problem in mind?</h2>
             <p class="mt-3 text-base text-muted">
-              Tell us what you're working on. We'll come back inside two business days with whoever on the team is the right fit.
+              Tell us what you're working on. We'll come back inside two business days with whoever on the team is the right fit — not a generic sales pitch.
             </p>
           </div>
           <div class="md:text-right">

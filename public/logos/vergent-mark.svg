@@ -1,13 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<!--
+  Vergent swirl mark only (no wordmark) — for compact uses like the favicon
+  or sticky header collapse states.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Vergent">
   <defs>
-    <linearGradient id="fav-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="vrg-mark-grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%"  stop-color="#E11D74"/>
       <stop offset="55%" stop-color="#F0518A"/>
       <stop offset="100%" stop-color="#F5821F"/>
     </linearGradient>
   </defs>
-  <g transform="translate(32,32)">
-    <g fill="url(#fav-grad)" transform="scale(0.32)">
+  <g transform="translate(100,100)">
+    <g fill="url(#vrg-mark-grad)">
       <path d="M 0 -78 Q 55 -70 70 -20 Q 48 12 6 -8 Q -10 -48 0 -78 Z"/>
       <path transform="rotate(72)"  d="M 0 -78 Q 55 -70 70 -20 Q 48 12 6 -8 Q -10 -48 0 -78 Z"/>
       <path transform="rotate(144)" d="M 0 -78 Q 55 -70 70 -20 Q 48 12 6 -8 Q -10 -48 0 -78 Z"/>

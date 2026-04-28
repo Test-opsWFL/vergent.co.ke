@@ -5,8 +5,15 @@
     "legalName": "Vergent Technology Solutions Ltd.",
     "tagline": "Architecting the Digital Landscape of Tomorrow"
   },
+  "ribbon": {
+    "tag": "New",
+    "text": "V/ergent — our continuous ERP audit platform for SAP, Oracle, Dynamics 365, NetSuite & Sage.",
+    "linkLabel": "Open V/ergent",
+    "href": "https://app.vergent.co.ke"
+  },
   "nav": [
     { "label": "About",    "href": "/about" },
+    { "label": "Products", "href": "/#products" },
     { "label": "Services", "href": "/services" },
     { "label": "Contact",  "href": "/contact" }
   ],
@@ -23,6 +30,12 @@
     { "city": "Bishkek", "country": "Kyrgyzstan" }
   ],
   "supportPresence": ["Philippines", "India"],
+  "stats": [
+    { "value": "10+", "label": "ERP & cloud platforms supported" },
+    { "value": "12+", "label": "Compliance frameworks covered" },
+    { "value": "520+", "label": "Audit checks shipped in V/ergent" },
+    { "value": "5",   "label": "Delivery hubs across three continents" }
+  ],
   "partners": [
     { "name": "Microsoft" },
     { "name": "Oracle" },
@@ -31,6 +44,36 @@
     { "name": "Centerity" },
     { "name": "Dreamvise" },
     { "name": "SysAid" }
+  ],
+  "productsIntro": "Beyond consulting engagements, Vergent ships its own software under the V/ergent name — built for the audit, security, and assurance work our clients face every quarter.",
+  "products": [
+    {
+      "markPrefix": "V",
+      "markSuffix": "/ergent",
+      "title": "ERP & cloud audit platform",
+      "summary": "Continuous configuration and security audit for SAP S/4HANA, Oracle Fusion, Dynamics 365, NetSuite, Sage Intacct, Sage X3, AWS, and Azure. 520+ checks, live connectors, defensible reports.",
+      "url": "https://app.vergent.co.ke",
+      "linkLabel": "Open V/ergent",
+      "status": "Live"
+    },
+    {
+      "markPrefix": "Cyber",
+      "markSuffix": "Core",
+      "title": "Multi-framework cyber assurance",
+      "summary": "Walk through every control in ISO 27001, NIST CSF, PCI DSS, NCSC CAF, DORA, NIS2, and 12 more — with evidence storage, scoring rules, and audit-ready exports.",
+      "url": "https://cyber.vergent.co.ke",
+      "linkLabel": "Open CyberCore",
+      "status": "Live"
+    },
+    {
+      "markPrefix": "Bank",
+      "markSuffix": "Core",
+      "title": "Banking compliance & operations",
+      "summary": "Risk, compliance, and operations tooling tailored for financial institutions across East Africa and the Gulf.",
+      "url": "",
+      "linkLabel": "In private beta",
+      "status": "Beta"
+    }
   ],
   "footer": {
     "copyrightHolder": "Vergent Technology Solutions Ltd.",

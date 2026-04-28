@@ -1,0 +1,71 @@
+---
+interface Props {
+  variant?: 'horizontal' | 'mark-only' | 'stacked';
+  size?: 'sm' | 'md' | 'lg';
+  showTagline?: boolean;
+  /** Override the wordmark colour (defaults to ink). */
+  wordmarkClass?: string;
+  /** Override the tagline colour (defaults to accent). */
+  taglineClass?: string;
+}
+
+const {
+  variant = 'horizontal',
+  size = 'md',
+  showTagline = true,
+  wordmarkClass = 'text-ink',
+  taglineClass = 'text-accent',
+} = Astro.props;
+
+const markSize = {
+  sm: 'h-6 w-6',
+  md: 'h-9 w-9',
+  lg: 'h-14 w-14',
+}[size];
+
+const wordmarkSize = {
+  sm: 'text-base',
+  md: 'text-xl',
+  lg: 'text-3xl',
+}[size];
+
+const taglineSize = {
+  sm: 'text-[8px]',
+  md: 'text-[9px]',
+  lg: 'text-xs',
+}[size];
+---
+
+{variant === 'mark-only' ? (
+  <img
+    src="/logos/vergent-mark.svg"
+    alt="Vergent"
+    class:list={[markSize]}
+    width="40"
+    height="40"
+  />
+) : variant === 'stacked' ? (
+  <span class="inline-flex flex-col items-center gap-2">
+    <img src="/logos/vergent-mark.svg" alt="" class:list={[markSize]} width="40" height="40" />
+    <span class:list={['font-display font-extrabold tracking-tight leading-none', wordmarkSize, wordmarkClass]}>Vergent</span>
+    {showTagline && (
+      <span class:list={['font-display font-semibold uppercase tracking-[0.18em]', taglineSize, taglineClass]}>
+        Technology Solutions
+      </span>
+    )}
+  </span>
+) : (
+  <span class="inline-flex items-center gap-3">
+    <img src="/logos/vergent-mark.svg" alt="" class:list={[markSize, 'flex-shrink-0']} width="40" height="40" />
+    <span class="inline-flex flex-col leading-none">
+      <span class:list={['font-display font-extrabold tracking-tight', wordmarkSize, wordmarkClass]}>
+        Vergent
+      </span>
+      {showTagline && (
+        <span class:list={['mt-1 font-display font-semibold uppercase tracking-[0.18em]', taglineSize, taglineClass]}>
+          Technology Solutions
+        </span>
+      )}
+    </span>
+  </span>
+)}

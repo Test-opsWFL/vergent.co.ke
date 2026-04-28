@@ -1,17 +1,20 @@
 ---
 import site from '../data/site.json';
 import ThemeToggle from './ThemeToggle.astro';
+import Logo from './Logo.astro';
 
 const { pathname } = Astro.url;
-const isActive = (href: string) =>
-  href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(href + '/');
+const isActive = (href: string) => {
+  if (href.startsWith('/#')) return false;
+  if (href === '/') return pathname === '/';
+  return pathname === href || pathname.startsWith(href + '/');
+};
 ---
 
 <header class="sticky top-0 z-40 border-b border-border bg-surface/80 backdrop-blur supports-[backdrop-filter]:bg-surface/70">
-  <div class="container-content flex h-16 items-center gap-6">
-    <a href="/" class="flex items-baseline gap-1 text-lg font-display font-semibold tracking-tight">
-      <span class="text-ink">Vergent</span>
-      <span aria-hidden="true" class="text-accent">.</span>
+  <div class="container-wide flex h-16 items-center gap-6">
+    <a href="/" class="flex items-center" aria-label="Vergent Technology Solutions home">
+      <Logo variant="horizontal" size="md" />
     </a>
 
     <nav aria-label="Primary" class="ml-auto hidden items-center gap-1 md:flex">
@@ -48,7 +51,7 @@ const isActive = (href: string) =>
   </div>
 
   <div id="mobile-menu" class="hidden border-t border-border bg-surface md:hidden">
-    <nav aria-label="Mobile" class="container-content flex flex-col py-4">
+    <nav aria-label="Mobile" class="container-wide flex flex-col py-4">
       {site.nav.map((item) => (
         <a
           href={item.href}
@@ -65,11 +68,11 @@ const isActive = (href: string) =>
 
 <script is:inline>
   (function () {
-    const btn = document.getElementById('mobile-menu-toggle');
-    const menu = document.getElementById('mobile-menu');
+    var btn = document.getElementById('mobile-menu-toggle');
+    var menu = document.getElementById('mobile-menu');
     if (!btn || !menu) return;
     btn.addEventListener('click', function () {
-      const open = menu.classList.toggle('hidden') === false;
+      var open = menu.classList.toggle('hidden') === false;
       btn.setAttribute('aria-expanded', String(open));
       btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     });

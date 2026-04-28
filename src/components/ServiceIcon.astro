@@ -1,0 +1,24 @@
+---
+interface Props {
+  name?: 'cloud' | 'shield' | 'code';
+  class?: string;
+}
+const { name, class: className = 'h-5 w-5' } = Astro.props;
+---
+
+{name === 'cloud' && (
+  <svg class={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M17.5 19a4.5 4.5 0 1 0-1.4-8.78A6 6 0 0 0 4 12.5 4.5 4.5 0 0 0 6.5 19h11Z"/>
+  </svg>
+)}
+{name === 'shield' && (
+  <svg class={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M12 3 4 6v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V6l-8-3Z"/>
+    <path d="m9 12 2 2 4-4"/>
+  </svg>
+)}
+{name === 'code' && (
+  <svg class={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 4 10 20"/>
+  </svg>
+)}
