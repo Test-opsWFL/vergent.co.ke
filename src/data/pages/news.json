@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "eyebrow": "Newsroom",
+    "headline": "Press, releases, and what we're publishing.",
+    "subhead": "Vergent is a delivery-first firm — we write when we have something to say, not on a content calendar. This page is the home for press releases, product announcements, and the occasional field note from an engagement we can talk about."
+  },
+  "status": {
+    "eyebrow": "Status",
+    "title": "We're standing this up.",
+    "body": "Our newsroom is being rebuilt as part of the wider site redesign in 2026. Past press is being migrated from the previous WordPress site; new releases will publish here first. If you need historical coverage in the meantime, the team is happy to send it on request."
+  },
+  "categories": [
+    {
+      "title": "Press releases",
+      "summary": "Company announcements — new offices, partnerships, leadership additions, and material engagements where the client is happy to be named."
+    },
+    {
+      "title": "Product announcements",
+      "summary": "V/ergent, CyberCore, BankCore, and OCDP release notes. Major feature launches, framework coverage updates, and platform availability."
+    },
+    {
+      "title": "Field notes",
+      "summary": "Short write-ups from real engagements — anonymised where required. The kind of thing we'd send a colleague over coffee, not gated whitepapers."
+    }
+  ],
+  "press": {
+    "eyebrow": "Press contact",
+    "title": "Working on a story?",
+    "body": "We can usually turn around quotes, technical background, or executive availability inside one business day. Have a deadline — say so when you write.",
+    "email": "info@vergent.co.ke",
+    "linkedinLabel": "Vergent on LinkedIn",
+    "linkedinHref": "https://www.linkedin.com/company/vergent-technology/"
+  },
+  "subscribe": {
+    "eyebrow": "Stay close",
+    "title": "Nothing to subscribe to yet.",
+    "body": "When we have a mailing list worth subscribing to, it will live here. For now, LinkedIn is the most reliable signal — we post when something ships."
+  }
+}

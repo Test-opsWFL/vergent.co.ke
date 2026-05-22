@@ -1,0 +1,95 @@
+{
+  "hero": {
+    "eyebrow": "Solutions",
+    "headline": "Named outcomes, not capability lists.",
+    "subhead": "Six packaged engagements that match how enterprises actually buy from Vergent. Each one bundles delivery, expertise, and the tooling we ship in-house — accountable to a specific outcome, not a body-shop SOW."
+  },
+  "intro": {
+    "eyebrow": "How this page is organised",
+    "title": "Solutions are how the work shows up — services are what we draw on to deliver them.",
+    "paragraphs": [
+      "If you want a deeper read on the disciplines behind each engagement, the services page covers the capability surface. This page is the buying view — the engagements we propose, the outcomes we commit to, and the tooling that comes with them."
+    ]
+  },
+  "solutions": [
+    {
+      "title": "Oracle audit defence",
+      "summary": "Turn an Oracle LMS letter from a $1M demand into a defensible $200K position.",
+      "body": "We run a structured response to an active or impending Oracle audit — independent of Oracle's own tooling. Contract overlay, innocent-usage filtering, swap-and-sweep across shelf-ware, and a forensic remediation log. Outcome: a defensible liability number you can negotiate against, with evidence behind every variance.",
+      "outcomes": [
+        "Independent re-calculation of Oracle's claimed liability",
+        "Variance report citing contract clauses, core factors, and usage thresholds",
+        "Remediation plan with proof-of-cleanup tracking"
+      ],
+      "tooling": "OCDP (Oracle Compliance Defense Platform) — Vergent-built engine that ingests LMS output and applies contract logic Oracle won't.",
+      "icon": "shield"
+    },
+    {
+      "title": "ERP audit & assurance",
+      "summary": "Continuous, defensible audit across SAP, Oracle, Dynamics 365, NetSuite, and Sage estates.",
+      "body": "Most enterprises rely on whatever their ERP vendor ships, which is rarely independent and never cross-platform. We give you a single audit pane across the eight platforms your real estate actually runs on — with 520+ checks, live connectors, and reports that survive scrutiny from internal audit, external auditors, and the board.",
+      "outcomes": [
+        "Single audit view across SAP S/4HANA, Oracle Fusion, D365, NetSuite, Sage Intacct, Sage X3, AWS, and Azure",
+        "Defensible quarterly assurance reports",
+        "Findings mapped to the frameworks your auditors actually use"
+      ],
+      "tooling": "V/ergent — Vergent's ERP & cloud audit platform. Live at app.vergent.co.ke.",
+      "icon": "shield"
+    },
+    {
+      "title": "Cyber AIOps & SOC",
+      "summary": "AI-driven detection, response, and continuous control monitoring across hybrid estates.",
+      "body": "A 24×7 security operation that isn't a tier-one ticket farm. We run detection and response across hybrid and multi-cloud, with continuous control monitoring tied back to the frameworks your organisation already reports against. Partners include Cynet, Centerity, Dreamvise, and SysAid where they fit the brief.",
+      "outcomes": [
+        "Round-the-clock detection and response across cloud and on-prem",
+        "Control-monitoring evidence aligned to ISO 27001, NIST CSF, PCI DSS, NCSC CAF, DORA, and NIS2",
+        "Incident response with senior responders, not first-line escalation"
+      ],
+      "tooling": "CyberCore — Vergent's multi-framework cyber assurance platform. Live at cyber.vergent.co.ke.",
+      "icon": "shield"
+    },
+    {
+      "title": "Cloud & licence rationalisation",
+      "summary": "Reclaim budget and surface contract risk before renewal — Microsoft, Oracle, SAP, AWS, Azure.",
+      "body": "Two problems that look separate but feed each other: software licences you bought before you knew what you'd use, and cloud bills that grew faster than the architecture justifies. We run them together — a single review that produces a rationalisation plan with the negotiation leverage built in.",
+      "outcomes": [
+        "Licence position vs. actual usage, with rebalancing recommendations",
+        "Cloud spend review with right-sizing and reserved-capacity plays",
+        "Renewal-ready evidence pack before the vendor opens the conversation"
+      ],
+      "tooling": "Vergent delivery teams + the V/ergent audit platform feeding the data.",
+      "icon": "cloud"
+    },
+    {
+      "title": "SAP S/4HANA & ERP modernisation",
+      "summary": "Move off legacy ECC, JDE, or AX without breaking the integrations holding operations together.",
+      "body": "ERP migrations fail because of integrations, not the ERP. We start from the integration inventory — the bespoke interfaces, scheduled jobs, and reports that nobody owns but everybody depends on — and design a S/4HANA (or Dynamics 365, or NetSuite) transition around them. Delivery from Nairobi, Dubai, Bishkek, Manila, and Bengaluru, in your time zone.",
+      "outcomes": [
+        "Migration plan that respects the integrations you actually have",
+        "Continuous audit through cut-over with V/ergent connectors",
+        "Single accountable owner across SIs, internal teams, and partners"
+      ],
+      "tooling": "Vergent delivery + V/ergent extractors across the source and target estate.",
+      "icon": "code"
+    },
+    {
+      "title": "Agentic AI in production",
+      "summary": "Design, build, and operate the agents that increasingly run alongside enterprise systems.",
+      "body": "The interesting work in agentic AI is not the prototype — it is the eval suites, the observability, the governance, and the boring engineering that lets a non-deterministic system run unattended next to your ERP. We build agents that survive contact with production, with the controls a regulated enterprise needs.",
+      "outcomes": [
+        "Production-grade agents with eval suites and observability",
+        "Governance model aligned to your existing risk and compliance frameworks",
+        "Pragmatic scope — agents where they actually pay back, not where they look impressive"
+      ],
+      "tooling": "Vergent delivery — LLM-native development with Claude, OpenAI, and open-weight models where it fits.",
+      "icon": "spark"
+    }
+  ],
+  "callout": {
+    "eyebrow": "Engagement shape",
+    "title": "Most of our work starts with a scoped two-week assessment.",
+    "body": "Fixed scope, fixed price, a written recommendation at the end you can act on with or without us. If the recommendation says don't proceed, that's the recommendation.",
+    "ctaLabel": "Start a conversation",
+    "ctaHref": "/contact"
+  }
+}

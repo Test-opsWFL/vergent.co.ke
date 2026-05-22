@@ -1,0 +1,65 @@
+---
+import Base from '../layouts/Base.astro';
+import news from '../data/pages/news.json';
+import site from '../data/site.json';
+---
+
+<Base title="Newsroom">
+  <!-- HERO -->
+  <section class="container-content pt-section pb-section">
+    <p class="eyebrow">{news.hero.eyebrow}</p>
+    <h1 class="mt-6 max-w-3xl text-display font-display font-semibold leading-tight">{news.hero.headline}</h1>
+    <p class="mt-6 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">{news.hero.subhead}</p>
+  </section>
+
+  <!-- STATUS (honest, not a fake article list) -->
+  <section class="hairline">
+    <div class="container-content py-section md:py-section-lg">
+      <p class="eyebrow">{news.status.eyebrow}</p>
+      <h2 class="mt-6 max-w-3xl font-display text-3xl font-semibold leading-snug md:text-4xl">{news.status.title}</h2>
+      <p class="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">{news.status.body}</p>
+    </div>
+  </section>
+
+  <!-- CATEGORIES — describes what WILL live here, without faking content -->
+  <section>
+    <div class="container-wide py-section md:py-section-lg">
+      <ul class="grid gap-8 md:grid-cols-3">
+        {news.categories.map((c) => (
+          <li class="rounded-lg border border-border bg-card p-8 shadow-soft">
+            <h3 class="font-display text-xl font-semibold leading-snug text-ink">{c.title}</h3>
+            <p class="mt-3 text-base leading-7 text-muted">{c.summary}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- PRESS CONTACT -->
+  <section class="hairline">
+    <div class="container-content py-section md:py-section-lg">
+      <p class="eyebrow">{news.press.eyebrow}</p>
+      <h2 class="mt-6 max-w-3xl font-display text-3xl font-semibold leading-snug md:text-4xl">{news.press.title}</h2>
+      <p class="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">{news.press.body}</p>
+      <ul class="mt-8 space-y-3 text-base">
+        <li>
+          <a href={`mailto:${news.press.email}`}
+             class="font-display text-lg font-semibold text-ink hover:text-accent">{news.press.email}</a>
+        </li>
+        <li>
+          <a href={news.press.linkedinHref} target="_blank" rel="noopener"
+             class="font-display text-lg font-semibold text-ink hover:text-accent">{news.press.linkedinLabel}</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SUBSCRIBE (honest — nothing to subscribe to yet) -->
+  <section>
+    <div class="container-content py-section md:py-section-lg">
+      <p class="eyebrow">{news.subscribe.eyebrow}</p>
+      <h2 class="mt-6 max-w-3xl font-display text-3xl font-semibold leading-snug md:text-4xl">{news.subscribe.title}</h2>
+      <p class="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">{news.subscribe.body}</p>
+    </div>
+  </section>
+</Base>
