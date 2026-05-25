@@ -96,6 +96,15 @@
       "url": "",
       "linkLabel": "In private beta",
       "status": "Beta"
+    },
+    {
+      "markPrefix": "OC",
+      "markSuffix": "DP",
+      "title": "Oracle compliance defense",
+      "summary": "Independent Oracle audit defence engine. Ingests LMS output, applies contract logic Oracle won't, filters innocent usage, and produces a defensible liability number you can negotiate against.",
+      "url": "https://oracle-compliance-defense-platform-production.up.railway.app",
+      "linkLabel": "Open OCDP",
+      "status": "Live"
     }
   ],
   "footer": {
