@@ -1,18 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <defs>
-    <linearGradient id="fav-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"  stop-color="#E11D74"/>
-      <stop offset="55%" stop-color="#F0518A"/>
-      <stop offset="100%" stop-color="#F5821F"/>
-    </linearGradient>
-  </defs>
-  <g transform="translate(32,32)">
-    <g fill="url(#fav-grad)" transform="scale(0.32)">
-      <path d="M 0 -78 Q 55 -70 70 -20 Q 48 12 6 -8 Q -10 -48 0 -78 Z"/>
-      <path transform="rotate(72)"  d="M 0 -78 Q 55 -70 70 -20 Q 48 12 6 -8 Q -10 -48 0 -78 Z"/>
-      <path transform="rotate(144)" d="M 0 -78 Q 55 -70 70 -20 Q 48 12 6 -8 Q -10 -48 0 -78 Z"/>
-      <path transform="rotate(216)" d="M 0 -78 Q 55 -70 70 -20 Q 48 12 6 -8 Q -10 -48 0 -78 Z"/>
-      <path transform="rotate(288)" d="M 0 -78 Q 55 -70 70 -20 Q 48 12 6 -8 Q -10 -48 0 -78 Z"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAoCAMAAACPWYlDAAAAYFBMVEX3ZWP4Z1b3dinzXlvzXlvydTTzdy/zMHb+gS3ydjL//wDwO3j/AP+6djL/gUX/Var0PXn9ihKqVVX/qlW/P3+/Pz/vPXZ/fwD6HJf/QoAAAAD2eDP3Vmv/AAD2aVPzSHOpnEDIAAAAIHRSTlMR7RFeomGmD/7LAWEBA/4D5BEDAwQEjQIQ/wD6+wH6+s8nGg4AAAKDSURBVHjalVWJsqJADMwcMA9Efeq7NhD4/798nYwjl27tTlkWRzqdoxOI//PQk2dC9Ok/ieTfAHSbL59g6Mm9p6CH9HoHoU0wzFV0o3PjiL8YaOdyddvCvOnN2gDD4AA5vwR49nXf92MhGPQ44o8XgBb2bwA4B784iShEN0xh5XW+Fn+3j2HlMU4Hvu4BIp6zPcyTlbRU6ucr2ZNdSJXa95U+SiFOOYNRK/VDO4b24rl5y/YpHdyEo/ZWsEgLv/nqypW/qH3NvuN0QMJIWXPO9a3YyxJA4nuLqPHbzoZoiPrR8gzgprGU4Qm3HaVORJQCr8OIzoP6OAMQoosG8NKuSh5G1Iyc6/u3im+z2DiimLVmQBsZBFdTRsDZsQCEXQZU4tcZwNWphmKUoi7hw55GUFclhSWFEHiJK6Owt5RTAINXwHGn/lrDxzuluAOuTAOSpua0B3ipzLequLFezACuTmGbA157rZAoBXBtCUllj9Qj3zaA1gAN3wHeAJ0CBuRHGJZNo1EQNb1ws2Bg6TBcUasethMsxXcGSAYkjsMEis/9jmhzgRQwVwlTHiDmyOn7yRbKDJ2JowBEksof8bSbPuNXGYBMG1LUmpRi0mlfjhbxt+rYqmQyuD3kLZTeM4LpgyRLG41BpygrtTkVYZZ/QwxxyRCjJzahXggSvMd7tzjzYbITdSWJTudohTadYlysB8utkfjwfp98jD5+Lts71RA21WOyHjF8IKo/0wMz6DYLmGctES0aNAd9xrZ4kGgyZPOP6qy21/oyHWJ0MW/5MG+Y9sX2lnPZiMh5sA0OpuPr74N06cvpKTtP9yz9/ZMF1zkJQDSP3URtP1kZZHv7xTf2F+6HmCQxmQvAAAAAAElFTkSuQmCC" width="48" height="48"/></svg>

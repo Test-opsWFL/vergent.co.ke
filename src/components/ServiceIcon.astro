@@ -1,6 +1,6 @@
 ---
 interface Props {
-  name?: 'cloud' | 'shield' | 'code';
+  name?: 'cloud' | 'shield' | 'code' | 'spark';
   class?: string;
 }
 const { name, class: className = 'h-5 w-5' } = Astro.props;
@@ -20,5 +20,11 @@ const { name, class: className = 'h-5 w-5' } = Astro.props;
 {name === 'code' && (
   <svg class={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
     <path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 4 10 20"/>
+  </svg>
+)}
+{name === 'spark' && (
+  <svg class={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/>
+    <circle cx="12" cy="12" r="2.5"/>
   </svg>
 )}

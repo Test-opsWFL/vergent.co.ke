@@ -1,6 +1,31 @@
 ---
-// Hero visual: a "live delivery view" that reflects Vergent the consultancy —
-// hubs online, engagements in flight, today's activity. No product borrowing.
+// Hero visual: a wireframe of "the digital landscape" — what Vergent
+// actually architects. Layered system stack with security as a cross-cutting
+// rail. No repeated copy from the rest of the page.
+
+const layers = [
+  {
+    code: 'L04',
+    title: 'Agents & experiences',
+    items: ['Co-pilots', 'Workflows', 'Portals', 'Mobile'],
+    accent: true,
+  },
+  {
+    code: 'L03',
+    title: 'Applications',
+    items: ['ERP', 'CRM', 'Custom builds', 'APIs'],
+  },
+  {
+    code: 'L02',
+    title: 'Data & platform',
+    items: ['Warehouses', 'Streams', 'Identity', 'Integration'],
+  },
+  {
+    code: 'L01',
+    title: 'Infrastructure',
+    items: ['Cloud', 'Network', 'Compute', 'Storage'],
+  },
+];
 ---
 
 <div class="relative">
@@ -8,108 +33,89 @@
   <div aria-hidden="true" class="absolute -inset-6 -z-10 rounded-3xl bg-gradient-to-br from-accent/10 via-brand-blue/10 to-transparent blur-2xl"></div>
 
   <div class="rounded-xl bg-card shadow-mockup ring-1 ring-border overflow-hidden">
-    <!-- Browser chrome -->
-    <div class="flex items-center gap-2 border-b border-border bg-surface/80 px-3 py-2">
-      <div class="flex gap-1.5">
-        <span class="h-2.5 w-2.5 rounded-full bg-border"></span>
-        <span class="h-2.5 w-2.5 rounded-full bg-border"></span>
-        <span class="h-2.5 w-2.5 rounded-full bg-border"></span>
-      </div>
-      <div class="mx-auto flex items-center gap-1.5 rounded-md bg-card px-3 py-1 text-[11px] font-mono text-muted ring-1 ring-border">
-        <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 6v6l4 2"/></svg>
-        vergent.co.ke / delivery view
-      </div>
-      <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-emerald-700 ring-1 ring-emerald-500/20">
-        <span class="status-dot"></span> Live
-      </span>
-    </div>
-
-    <!-- Body -->
-    <div class="p-5 md:p-6">
-      <!-- Top: title + real Vergent logo -->
-      <div class="flex items-center justify-between gap-4">
-        <div>
-          <p class="text-[10px] font-semibold uppercase tracking-[0.14em] text-muted">Today across the network · 2026-04-28</p>
-          <h3 class="mt-1 font-display text-base font-semibold text-ink">Global delivery view</h3>
-        </div>
-        <span class="inline-flex items-center gap-2 flex-shrink-0">
-          <img src="/logos/vergent-mark.svg" alt="" class="h-7 w-7" width="28" height="28" />
-          <span class="font-display text-base font-extrabold tracking-tight text-ink leading-none">Vergent</span>
+    <!-- Blueprint title bar -->
+    <div class="flex items-center justify-between gap-3 border-b border-border bg-surface/60 px-4 py-2.5">
+      <div class="flex items-center gap-2">
+        <svg aria-hidden="true" class="h-3.5 w-3.5 text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 5h18M3 12h18M3 19h18M7 5v14M17 5v14"/>
+        </svg>
+        <span class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
+          Reference architecture
         </span>
       </div>
+      <span class="font-mono text-[10px] text-muted">REV · DLT-01</span>
+    </div>
 
-      <!-- Hubs -->
-      <div class="mt-5">
-        <div class="flex items-center justify-between text-[10px] uppercase tracking-wider text-muted">
-          <span>Hubs online</span>
-          <span class="tabular-nums text-ink">5 / 5</span>
-        </div>
-        <ul class="mt-2 grid grid-cols-1 gap-1.5 sm:grid-cols-2">
-          <li class="flex items-center gap-2 rounded-md border border-border bg-surface/60 px-2.5 py-1.5">
-            <span class="status-dot"></span>
-            <span class="text-xs font-medium text-ink">Nairobi</span>
-            <span class="ml-auto text-[10px] text-muted">Security architecture</span>
-          </li>
-          <li class="flex items-center gap-2 rounded-md border border-border bg-surface/60 px-2.5 py-1.5">
-            <span class="status-dot"></span>
-            <span class="text-xs font-medium text-ink">Dubai</span>
-            <span class="ml-auto text-[10px] text-muted">Cloud modernisation</span>
-          </li>
-          <li class="flex items-center gap-2 rounded-md border border-border bg-surface/60 px-2.5 py-1.5">
-            <span class="status-dot"></span>
-            <span class="text-xs font-medium text-ink">Bishkek</span>
-            <span class="ml-auto text-[10px] text-muted">Platform ops</span>
-          </li>
-          <li class="flex items-center gap-2 rounded-md border border-border bg-surface/60 px-2.5 py-1.5">
-            <span class="status-dot"></span>
-            <span class="text-xs font-medium text-ink">Manila · Bengaluru</span>
-            <span class="ml-auto text-[10px] text-muted">24 / 7</span>
-          </li>
+    <!-- Diagram body -->
+    <div class="p-5 md:p-6">
+      <div class="grid grid-cols-[1fr,auto] gap-3">
+        <!-- Layered stack -->
+        <ul class="space-y-2" role="list">
+          {layers.map((l) => (
+            <li class:list={[
+              'rounded-md border p-3',
+              l.accent
+                ? 'border-accent/40 bg-accent/[0.04]'
+                : 'border-border border-dashed bg-surface/40',
+            ]}>
+              <div class="flex items-baseline justify-between gap-3">
+                <span class:list={[
+                  'font-mono text-[10px] uppercase tracking-[0.16em]',
+                  l.accent ? 'text-accent' : 'text-muted',
+                ]}>{l.code}</span>
+                <span class="font-display text-xs font-semibold text-ink">{l.title}</span>
+              </div>
+              <div class="mt-2 grid grid-cols-4 gap-1.5">
+                {l.items.map((item) => (
+                  <span class="truncate rounded border border-border bg-card px-1.5 py-1 text-center text-[9px] font-medium text-muted">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </li>
+          ))}
         </ul>
+
+        <!-- Cross-cutting security rail -->
+        <div class="flex">
+          <div class="flex w-9 flex-col items-center justify-between rounded-md border border-dashed border-accent/40 bg-accent/[0.04] py-3">
+            <svg aria-hidden="true" class="h-3.5 w-3.5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3 4 6v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V6l-8-3Z"/>
+            </svg>
+            <span
+              class="font-mono text-[9px] uppercase tracking-[0.2em] text-accent"
+              style="writing-mode: vertical-rl; transform: rotate(180deg);"
+            >
+              Security & compliance
+            </span>
+            <span class="font-mono text-[9px] text-accent/60">▲</span>
+          </div>
+        </div>
       </div>
 
-      <!-- Engagements -->
-      <div class="mt-5">
-        <div class="flex items-center justify-between text-[10px] uppercase tracking-wider text-muted">
-          <span>Engagements in flight</span>
-          <span class="tabular-nums text-ink">42 · 68% on track</span>
-        </div>
-        <div class="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-border">
-          <div class="h-full rounded-full bg-gradient-to-r from-brand-blue via-brand-blue to-accent" style="width: 68%"></div>
-        </div>
-      </div>
+      <!-- Caption -->
+      <p class="mt-5 border-t border-border pt-4 text-xs leading-5 text-muted">
+        <span class="font-display font-semibold text-ink">Architecting the digital landscape.</span>
+        Four layers, one stack — designed, built, and operated by the same senior team.
+      </p>
+    </div>
 
-      <!-- Activity feed -->
-      <ul class="mt-5 divide-y divide-border rounded-md border border-border">
-        <li class="flex items-center gap-3 px-3 py-2.5">
-          <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-50 text-emerald-700 ring-1 ring-emerald-500/20">
-            <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 7"/></svg>
-          </span>
-          <span class="flex-1 truncate text-xs text-ink">SAP S/4HANA cutover — East Africa banking</span>
-          <span class="rounded bg-emerald-50 px-1.5 py-0.5 text-[10px] font-semibold uppercase text-emerald-700">Closed</span>
-        </li>
-        <li class="flex items-center gap-3 px-3 py-2.5">
-          <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-sky-50 text-sky-700 ring-1 ring-sky-500/20">
-            <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg>
-          </span>
-          <span class="flex-1 truncate text-xs text-ink">Azure landing zone · phase 3 — gov client</span>
-          <span class="rounded bg-sky-50 px-1.5 py-0.5 text-[10px] font-semibold uppercase text-sky-700">In flight</span>
-        </li>
-        <li class="flex items-center gap-3 px-3 py-2.5">
-          <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-50 text-emerald-700 ring-1 ring-emerald-500/20">
-            <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 7"/></svg>
-          </span>
-          <span class="flex-1 truncate text-xs text-ink">ISO 27001 surveillance audit — DXB FI</span>
-          <span class="rounded bg-emerald-50 px-1.5 py-0.5 text-[10px] font-semibold uppercase text-emerald-700">Pass</span>
-        </li>
-      </ul>
+    <!-- Footer -->
+    <div class="flex items-center justify-between gap-2 border-t border-border bg-surface/60 px-5 py-3 text-[11px] text-muted">
+      <span class="inline-flex items-center gap-1.5">
+        <img src="/logos/vergent-mark.png" alt="" class="h-4 w-4 object-contain" />
+        <span class="font-display font-semibold text-ink">Vergent</span>
+      </span>
+      <span class="font-mono text-[10px] uppercase tracking-[0.14em]">
+        Cloud · Data · Apps · Agents
+      </span>
     </div>
   </div>
 
   <!-- Floating chip -->
   <div class="absolute -bottom-4 -left-4 hidden md:block">
     <div class="rounded-md bg-brand-navy px-3 py-2 text-xs font-medium text-white shadow-mockup">
-      <span class="text-accent">5 hubs</span> · 3 continents · 24 / 7
+      <span class="text-accent">Architects</span> of the modern enterprise stack
     </div>
   </div>
 </div>

@@ -6,75 +6,94 @@ import solutions from '../data/pages/solutions.json';
 
 <Base title="Solutions">
   <!-- HERO -->
-  <section class="container-content pt-section pb-section">
-    <p class="eyebrow">{solutions.hero.eyebrow}</p>
-    <h1 class="mt-6 max-w-3xl text-display font-display font-semibold leading-tight">{solutions.hero.headline}</h1>
-    <p class="mt-6 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">{solutions.hero.subhead}</p>
+  <section class="relative overflow-hidden hero-grid-bg">
+    <div class="container-wide pt-section pb-section">
+      <p class="eyebrow reveal-on-scroll">{solutions.hero.eyebrow}</p>
+      <h1 class="mt-4 max-w-4xl text-display-xl font-display font-semibold reveal-on-scroll">
+        {solutions.hero.headline}
+      </h1>
+      <p class="mt-4 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-7 reveal-on-scroll">
+        {solutions.hero.subhead}
+      </p>
+    </div>
   </section>
 
   <!-- INTRO -->
   <section class="hairline">
-    <div class="container-content py-section md:py-section-lg">
-      <p class="eyebrow">{solutions.intro.eyebrow}</p>
-      <h2 class="mt-6 max-w-3xl font-display text-3xl font-semibold leading-snug md:text-4xl">{solutions.intro.title}</h2>
-      {solutions.intro.paragraphs.map((p) => (
-        <p class="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">{p}</p>
-      ))}
+    <div class="container-wide py-section">
+      <div class="max-w-2xl">
+        <p class="eyebrow">{solutions.intro.eyebrow}</p>
+        <h2 class="mt-2 text-h2 font-display font-semibold">{solutions.intro.title}</h2>
+        {solutions.intro.paragraphs.map((p) => (
+          <p class="mt-3 text-sm leading-6 text-muted md:text-base md:leading-7">{p}</p>
+        ))}
+      </div>
     </div>
   </section>
 
-  <!-- SOLUTIONS LIST -->
+  <!-- SOLUTIONS TILE GRID -->
   <section>
-    <div class="container-wide py-section md:py-section-lg">
-      <ul class="grid gap-10 md:grid-cols-2">
+    <div class="container-wide pb-section md:pb-section-lg">
+      <div class="grid gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
         {solutions.solutions.map((s) => (
-          <li class="rounded-lg border border-border bg-card p-8 md:p-10 shadow-soft">
-            <div class="flex items-start gap-5">
-              <span class="shrink-0 text-accent">
-                <ServiceIcon icon={s.icon} />
-              </span>
-              <div>
-                <h3 class="font-display text-2xl font-semibold leading-snug text-ink">{s.title}</h3>
-                <p class="mt-3 text-base leading-7 text-muted">{s.summary}</p>
-              </div>
+          <article class="bg-card p-6 md:p-7 flex flex-col">
+            <div class="flex items-center gap-3">
+              {s.icon && (
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-accent-soft text-accent">
+                  <ServiceIcon name={s.icon} class="h-5 w-5" />
+                </span>
+              )}
+              <p class="eyebrow">Solution</p>
             </div>
 
-            <p class="mt-6 text-base leading-7 text-ink">{s.body}</p>
+            <h3 class="mt-4 text-base font-display font-semibold text-ink">{s.title}</h3>
+            <p class="mt-1.5 text-sm leading-snug text-ink/85">{s.summary}</p>
+            <p class="mt-3 text-sm leading-6 text-muted">{s.body}</p>
 
-            <p class="mt-8 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-muted">Outcomes</p>
-            <ul class="mt-3 space-y-2 text-base leading-7 text-muted">
-              {s.outcomes.map((o) => (
-                <li class="flex gap-3">
-                  <span aria-hidden="true" class="mt-2 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                  <span>{o}</span>
-                </li>
-              ))}
-            </ul>
+            {s.outcomes.length > 0 && (
+              <>
+                <p class="mt-5 text-[10px] font-semibold uppercase tracking-[0.14em] text-muted">What you'll see</p>
+                <ul class="mt-2 space-y-1.5 text-sm text-ink/90">
+                  {s.outcomes.map((o) => (
+                    <li class="flex gap-3">
+                      <svg aria-hidden="true" class="mt-1 h-3.5 w-3.5 flex-shrink-0 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12l5 5L20 7"/>
+                      </svg>
+                      <span>{o}</span>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
 
             {s.tooling && (
-              <p class="mt-8 border-t border-border pt-5 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-muted">
-                Tooling · <span class="font-sans normal-case tracking-normal text-ink">{s.tooling}</span>
+              <p class="mt-5 border-t border-border pt-4 text-[10px] font-semibold uppercase tracking-[0.14em] text-muted">
+                Tooling
+                <span class="ml-2 font-sans normal-case tracking-normal text-ink/80">{s.tooling}</span>
               </p>
             )}
-          </li>
+          </article>
         ))}
-      </ul>
+      </div>
     </div>
   </section>
 
   <!-- CALLOUT -->
   <section class="hairline">
-    <div class="container-content py-section md:py-section-lg">
-      <p class="eyebrow">{solutions.callout.eyebrow}</p>
-      <h2 class="mt-6 max-w-3xl font-display text-3xl font-semibold leading-snug md:text-4xl">{solutions.callout.title}</h2>
-      <p class="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">{solutions.callout.body}</p>
-      <p class="mt-8">
-        <a href={solutions.callout.ctaHref}
-           class="inline-flex items-center gap-2 rounded-md bg-accent px-5 py-3 font-display text-sm font-semibold text-white hover:opacity-90">
-          {solutions.callout.ctaLabel}
-          <span aria-hidden="true">→</span>
-        </a>
-      </p>
+    <div class="container-wide py-section">
+      <div class="max-w-2xl">
+        <p class="eyebrow">{solutions.callout.eyebrow}</p>
+        <h2 class="mt-2 text-h2 font-display font-semibold">{solutions.callout.title}</h2>
+        <p class="mt-3 text-sm leading-6 text-muted md:text-base md:leading-7">{solutions.callout.body}</p>
+        <div class="mt-6">
+          <a href={solutions.callout.ctaHref} class="btn btn-primary">
+            {solutions.callout.ctaLabel}
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M13 6l6 6-6 6"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 </Base>

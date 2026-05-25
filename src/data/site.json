@@ -7,7 +7,7 @@
   },
   "ribbon": {
     "tag": "New",
-    "text": "V/ergent — our continuous ERP audit platform for SAP, Oracle, Dynamics 365, NetSuite & Sage.",
+    "text": "V/ergent — deep security checks across SAP, Oracle, Dynamics 365, NetSuite, Sage, AWS and Azure.",
     "linkLabel": "Open V/ergent",
     "href": "https://app.vergent.co.ke"
   },
@@ -30,20 +30,43 @@
     { "city": "Bishkek", "country": "Kyrgyzstan" }
   ],
   "supportPresence": ["Philippines", "India"],
-  "stats": [
-    { "value": "10+", "label": "ERP & cloud platforms supported" },
-    { "value": "12+", "label": "Compliance frameworks covered" },
-    { "value": "520+", "label": "Audit checks shipped in V/ergent" },
-    { "value": "5",   "label": "Delivery hubs across three continents" }
+  "capabilities": [
+    {
+      "title": "Software & data",
+      "summary": "Build, modernise, integrate.",
+      "items": ["Custom development", "ERP & cloud migrations", "Data platforms"]
+    },
+    {
+      "title": "Cyber AIOps",
+      "summary": "Detect, respond, observe.",
+      "items": ["24×7 SOC operations", "AI-driven monitoring", "Incident response"]
+    },
+    {
+      "title": "Security & compliance",
+      "summary": "Architect, audit, defend.",
+      "items": ["Security architecture", "Audit & assurance", "Frameworks & policy"]
+    },
+    {
+      "title": "Agentic AI",
+      "summary": "Design, build, govern.",
+      "items": ["Agent & workflow design", "LLM-native development", "Production deployment & evals"]
+    }
   ],
   "partners": [
+    { "name": "Cynet",     "logo": "/partners/cynet.png",     "url": "https://www.cynet.com" },
+    { "name": "Centerity", "logo": "/partners/centerity.png", "url": "https://www.centerity.com" },
+    { "name": "Dreamvise", "logo": "/partners/dreamvise.png", "url": "https://dreamvise.com" },
+    { "name": "SysAid",    "logo": "/partners/sysaid.png",    "url": "https://www.sysaid.com" }
+  ],
+  "specialisms": [
     { "name": "Microsoft" },
     { "name": "Oracle" },
     { "name": "SAP" },
-    { "name": "Amazon Web Services" },
-    { "name": "Centerity" },
-    { "name": "Dreamvise" },
-    { "name": "SysAid" }
+    { "name": "Dynamics 365" },
+    { "name": "NetSuite" },
+    { "name": "Sage" },
+    { "name": "AWS" },
+    { "name": "Azure" }
   ],
   "productsIntro": "Beyond consulting engagements, Vergent ships its own software under the V/ergent name — built for the audit, security, and assurance work our clients face every quarter.",
   "products": [

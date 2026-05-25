@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-  darkMode: 'class',
+  darkMode: 'media',
   theme: {
     extend: {
       colors: {
@@ -20,11 +20,11 @@ export default {
         sans:    ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       fontSize: {
-        'display-xl': ['clamp(2.75rem, 6vw, 4.5rem)', { lineHeight: '1.02', letterSpacing: '-0.03em' }],
-        'display':    ['clamp(2.25rem, 4.5vw, 3.25rem)', { lineHeight: '1.05', letterSpacing: '-0.025em' }],
-        'h2':         ['clamp(1.5rem, 2.6vw, 2rem)',     { lineHeight: '1.15', letterSpacing: '-0.02em' }],
-        'h3':         ['1.125rem', { lineHeight: '1.3', letterSpacing: '-0.01em' }],
-        'eyebrow':    ['0.75rem',  { lineHeight: '1', letterSpacing: '0.12em' }],
+        'display-xl': ['clamp(2.25rem, 5vw, 3.75rem)',  { lineHeight: '1.05', letterSpacing: '-0.03em' }],
+        'display':    ['clamp(1.875rem, 3.6vw, 2.625rem)', { lineHeight: '1.1',  letterSpacing: '-0.025em' }],
+        'h2':         ['clamp(1.25rem, 2.1vw, 1.625rem)',  { lineHeight: '1.2',  letterSpacing: '-0.02em' }],
+        'h3':         ['1rem',     { lineHeight: '1.35', letterSpacing: '-0.01em' }],
+        'eyebrow':    ['0.6875rem',{ lineHeight: '1',    letterSpacing: '0.14em' }],
       },
       maxWidth: {
         'prose':   '38rem',

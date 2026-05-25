@@ -57,16 +57,21 @@ import site from '../data/site.json';
 
   <!-- POSITIONING -->
   <section>
-    <div class="container-wide grid gap-10 py-section md:grid-cols-[1fr,1.4fr] md:py-section-lg">
-      <div>
-        <p class="eyebrow">{home.positioning.eyebrow}</p>
-        <h2 class="mt-3 text-h2 font-display font-semibold">
-          {home.positioning.title}
-        </h2>
+    <div class="container-wide py-section md:py-section-lg">
+      <p class="eyebrow">{home.positioning.eyebrow}</p>
+      <h2 class="mt-3 max-w-4xl text-h2 font-display font-semibold leading-tight">
+        {home.positioning.title}
+      </h2>
+      <div class="mt-6 grid gap-x-12 gap-y-3 md:grid-cols-[1fr,1.6fr]">
+        <div aria-hidden="true" class="hidden md:block md:border-t md:border-border md:pt-6">
+          <span class="font-display text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+            From strategy to production
+          </span>
+        </div>
+        <p class="max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
+          {home.positioning.body}
+        </p>
       </div>
-      <p class="text-base leading-7 text-muted md:text-lg md:leading-8">
-        {home.positioning.body}
-      </p>
     </div>
   </section>
 

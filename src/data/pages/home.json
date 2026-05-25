@@ -1,15 +1,15 @@
 {
   "hero": {
-    "eyebrow": "Software · Cyber AIOps · Security",
+    "eyebrow": "Software · Cyber AIOps · Security · Agentic AI",
     "headline": "Architecting the digital landscape of tomorrow.",
-    "subhead": "Cloud, modernization, and security work for enterprises, financial institutions, and government — delivered into production, not parked in a slide deck.",
+    "subhead": "Cloud, modernization, security, and agent-native software for enterprises, financial institutions, and government — delivered into production, not parked in a slide deck.",
     "primaryCta": { "label": "Talk to us", "href": "/contact" },
     "secondaryCta": { "label": "Our products", "href": "/#products" }
   },
   "positioning": {
     "eyebrow": "What we do",
-    "title": "A turnkey software, cyber AIOps, and security partner.",
-    "body": "Vergent bridges business and technology. We define what good looks like, ship it, and stay close to the work — so you don't have to translate between strategy decks and production systems."
+    "title": "Software, security, and Agentic AI — engineered for the modern enterprise.",
+    "body": "Vergent designs, builds, and runs the systems enterprises depend on — and the AI agents that increasingly run alongside them. From cloud architecture to cyber operations to autonomous workflows, the throughline is the same: outcomes you can measure in production."
   },
   "approach": {
     "eyebrow": "How we work",
@@ -17,24 +17,24 @@
     "body": "We don't drop binders and disappear. Vergent teams sit alongside yours — defining the work, shipping it, and owning the result through go-live and beyond.",
     "disciplines": [
       {
-        "title": "Security architecture",
-        "summary": "Designs aligned to SABSA, ITIL, and COBIT — and to the auditors you actually answer to."
+        "title": "Reference architecture",
+        "summary": "End-to-end designs across cloud, security, data, and agentic systems — frameworks-aligned and audit-ready."
       },
       {
-        "title": "Architecture reviews",
-        "summary": "Enterprise security reviews and system configuration assessments against a defensible baseline."
+        "title": "Production & eval engineering",
+        "summary": "CI/CD, observability, and the eval suites that keep platforms — and the agents on top of them — reliable in production."
       },
       {
-        "title": "Licence rationalisation",
-        "summary": "IT licence audits that reclaim spend and surface contract risk before renewal."
+        "title": "Cyber AIOps & SOC",
+        "summary": "AI-driven detection, response, and continuous control monitoring across hybrid and multi-cloud estates."
       },
       {
-        "title": "IT operations",
-        "summary": "Day-two consulting that keeps platforms healthy after the project closes."
+        "title": "Licence & cloud cost rationalisation",
+        "summary": "IT licence audits and cloud-spend reviews that reclaim budget and surface contract risk before renewal."
       },
       {
-        "title": "Project & vendor management",
-        "summary": "A single accountable owner across SIs, internal teams, and external partners."
+        "title": "Delivery & vendor management",
+        "summary": "A single accountable owner across SIs, internal teams, and external partners — through go-live and beyond."
       },
       {
         "title": "Sourcing & contracts",

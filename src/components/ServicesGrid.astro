@@ -16,6 +16,7 @@ const groupLabels: Record<string, string> = {
   'cloud-modernization': 'Cloud & modernization',
   'security-compliance': 'Security & compliance',
   'software-data':       'Software & data',
+  'agentic-ai':          'Agentic AI',
 };
 
 const containerClass = wideContainer ? 'container-wide' : 'container-content';
@@ -26,15 +27,15 @@ const containerClass = wideContainer ? 'container-wide' : 'container-content';
     <div class="max-w-2xl">
       <p class="eyebrow">Services</p>
       <h2 class="mt-3 text-h2 font-display font-semibold">
-        Three practices, one delivery model.
+        Four practices, one delivery model.
       </h2>
       <p class="mt-4 text-base text-muted">
-        Cloud and modernization, security and compliance, software and data. Engagements run from short architecture reviews to multi-year transformations — same senior team either way.
+        Cloud and modernization, security and compliance, software and data, and Agentic AI. Engagements run from short architecture reviews to multi-year transformations — same senior team either way.
       </p>
     </div>
   )}
 
-  <div class="mt-8 grid gap-px overflow-hidden rounded-lg border border-border bg-border md:grid-cols-3">
+  <div class="mt-8 grid gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
     {services.map((service) => (
       <article class="bg-card p-6 md:p-7 flex flex-col">
         <div class="flex items-center gap-3">
