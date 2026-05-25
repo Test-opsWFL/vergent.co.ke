@@ -14,7 +14,7 @@ import about from '../data/pages/about.json';
         <h1 class="mt-5 max-w-3xl text-display font-display font-semibold leading-tight">
           {about.hero.headline}
         </h1>
-        <p class="mt-5 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">
+        <p class="mt-5 max-w-2xl text-base leading-7 text-muted">
           {about.hero.subhead}
         </p>
       </div>
@@ -40,7 +40,7 @@ import about from '../data/pages/about.json';
         {about.hero.highlights.map((h) => (
           <div class="px-2 py-6 md:px-8 md:py-7">
             <dt class="font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-muted">{h.label}</dt>
-            <dd class="mt-2 font-display text-3xl font-extrabold tracking-tight text-ink md:text-4xl">{h.value}</dd>
+            <dd class="mt-2 font-display text-2xl font-extrabold tracking-tight text-ink md:text-3xl">{h.value}</dd>
           </div>
         ))}
       </dl>
@@ -51,8 +51,8 @@ import about from '../data/pages/about.json';
   <section>
     <div class="container-content py-section md:py-section-lg">
       <figure class="relative max-w-3xl mx-auto text-center">
-        <span aria-hidden="true" class="absolute -top-6 left-1/2 -translate-x-1/2 font-display text-7xl leading-none text-accent/30">"</span>
-        <blockquote class="font-display text-2xl font-semibold leading-snug text-ink md:text-3xl md:leading-tight">
+        <span aria-hidden="true" class="absolute -top-4 left-1/2 -translate-x-1/2 font-display text-5xl leading-none text-accent/30">"</span>
+        <blockquote class="font-display text-lg font-semibold leading-snug text-ink md:text-xl md:leading-tight">
           {about.pullQuote.text}
         </blockquote>
         <figcaption class="mt-5 font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-muted">
@@ -101,7 +101,7 @@ import about from '../data/pages/about.json';
         <p class="eyebrow">{about.expertise.eyebrow}</p>
         <h2 class="mt-3 text-h2 font-display font-semibold">{about.expertise.title}</h2>
         {about.expertise.intro && (
-          <p class="mt-4 text-base leading-7 text-muted md:text-lg md:leading-8">{about.expertise.intro}</p>
+          <p class="mt-4 text-base leading-7 text-muted">{about.expertise.intro}</p>
         )}
       </div>
       <div class="mt-10 grid gap-px overflow-hidden rounded-lg border border-border bg-border md:grid-cols-2 lg:grid-cols-3">
@@ -129,7 +129,7 @@ import about from '../data/pages/about.json';
           <h2 class="mt-3 text-h2 font-display font-semibold">{about.approach.title}</h2>
         </div>
         {about.approach.intro && (
-          <p class="text-base leading-7 text-muted md:text-lg md:leading-8">{about.approach.intro}</p>
+          <p class="text-base leading-7 text-muted">{about.approach.intro}</p>
         )}
       </div>
       <ul class="mt-10 grid gap-px overflow-hidden rounded-lg border border-border bg-border md:grid-cols-2 lg:grid-cols-3">

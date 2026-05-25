@@ -20,11 +20,11 @@ export default {
         sans:    ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       fontSize: {
-        'display-xl': ['clamp(2.25rem, 5vw, 3.75rem)',  { lineHeight: '1.05', letterSpacing: '-0.03em' }],
-        'display':    ['clamp(1.875rem, 3.6vw, 2.625rem)', { lineHeight: '1.1',  letterSpacing: '-0.025em' }],
-        'h2':         ['clamp(1.25rem, 2.1vw, 1.625rem)',  { lineHeight: '1.2',  letterSpacing: '-0.02em' }],
-        'h3':         ['1rem',     { lineHeight: '1.35', letterSpacing: '-0.01em' }],
-        'eyebrow':    ['0.6875rem',{ lineHeight: '1',    letterSpacing: '0.14em' }],
+        'display-xl': ['clamp(1.75rem, 3.5vw, 2.75rem)',   { lineHeight: '1.08', letterSpacing: '-0.03em' }],
+        'display':    ['clamp(1.375rem, 2.2vw, 2.125rem)', { lineHeight: '1.12', letterSpacing: '-0.025em' }],
+        'h2':         ['clamp(1.125rem, 1.8vw, 1.4rem)',   { lineHeight: '1.25', letterSpacing: '-0.02em' }],
+        'h3':         ['0.9375rem', { lineHeight: '1.35', letterSpacing: '-0.01em' }],
+        'eyebrow':    ['0.6875rem', { lineHeight: '1',    letterSpacing: '0.14em' }],
       },
       maxWidth: {
         'prose':   '38rem',
@@ -32,9 +32,9 @@ export default {
         'wide':    '88rem',
       },
       spacing: {
-        'section':    '3rem',
-        'section-lg': '4.5rem',
-        'section-xl': '5.5rem',
+        'section':    '2.5rem',
+        'section-lg': '3.25rem',
+        'section-xl': '4.5rem',
       },
       borderRadius: {
         'lg': '0.5rem',
