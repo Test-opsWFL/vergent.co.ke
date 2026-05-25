@@ -109,8 +109,8 @@
     {
       "markPrefix": "Licence",
       "markSuffix": "Optimiser",
-      "title": "Oracle licence optimisation",
-      "summary": "Continuous right-sizing of your Oracle estate. Identifies over-licensed products, under-used options, and negotiation leverage — turning your next renewal into a cost-reduction exercise.",
+      "title": "SAP Business One licence optimisation",
+      "summary": "Scores every SAP B1 user by activity, then recommends downgrade, exchange, or retire — validated against your actual contract before anything is approved. PDF and XLSX reports ready for your renewal conversation.",
       "url": "https://licenses.vergent.co.ke",
       "linkLabel": "Open LicenceOptimiser",
       "status": "Beta"
