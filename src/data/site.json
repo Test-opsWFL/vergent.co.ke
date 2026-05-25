@@ -105,6 +105,15 @@
       "url": "https://ocdp.vergent.co.ke",
       "linkLabel": "Open OracleDefence",
       "status": "Live"
+    },
+    {
+      "markPrefix": "Licence",
+      "markSuffix": "Optimiser",
+      "title": "Oracle licence optimisation",
+      "summary": "Continuous right-sizing of your Oracle estate. Identifies over-licensed products, under-used options, and negotiation leverage — turning your next renewal into a cost-reduction exercise.",
+      "url": "https://licenses.vergent.co.ke",
+      "linkLabel": "Open LicenceOptimiser",
+      "status": "Beta"
     }
   ],
   "footer": {
