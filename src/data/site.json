@@ -7,7 +7,7 @@
   },
   "ribbon": {
     "tag": "New",
-    "text": "V/ergent — deep security checks across SAP, Oracle, Dynamics 365, NetSuite, Sage, AWS and Azure.",
+    "text": "V/ergent - deep security checks across SAP, Oracle, Dynamics 365, NetSuite, Sage, AWS and Azure.",
     "linkLabel": "Open V/ergent",
     "href": "https://app.vergent.co.ke"
   },
@@ -68,7 +68,7 @@
     { "name": "AWS" },
     { "name": "Azure" }
   ],
-  "productsIntro": "Beyond consulting engagements, Vergent ships its own software under the V/ergent name — built for the audit, security, and assurance work our clients face every quarter.",
+  "productsIntro": "Beyond consulting engagements, Vergent ships its own software under the V/ergent name - built for the audit, security, and assurance work our clients face every quarter.",
   "products": [
     {
       "markPrefix": "V",
@@ -83,7 +83,7 @@
       "markPrefix": "Cyber",
       "markSuffix": "Core",
       "title": "Multi-framework cyber assurance",
-      "summary": "Walk through every control in ISO 27001, NIST CSF, PCI DSS, NCSC CAF, DORA, NIS2, and 12 more — with evidence storage, scoring rules, and audit-ready exports.",
+      "summary": "Walk through every control in ISO 27001, NIST CSF, PCI DSS, NCSC CAF, DORA, NIS2, and 12 more - with evidence storage, scoring rules, and audit-ready exports.",
       "url": "https://cyber.vergent.co.ke",
       "linkLabel": "Open CyberCore",
       "status": "Live"
@@ -101,7 +101,7 @@
       "markPrefix": "Oracle",
       "markSuffix": "Defence",
       "title": "Oracle compliance defence platform",
-      "summary": "Independent Oracle LMS compliance engine. Applies your contract logic, filters innocent usage, and produces a defensible liability number you can negotiate against — not Oracle's inflated opening position.",
+      "summary": "Independent Oracle LMS compliance engine. Applies your contract logic, filters innocent usage, and produces a defensible liability number you can negotiate against - not Oracle's inflated opening position.",
       "url": "https://ocdp.vergent.co.ke",
       "linkLabel": "Open OracleDefence",
       "status": "Live"
@@ -110,7 +110,7 @@
       "markPrefix": "Licence",
       "markSuffix": "Optimiser",
       "title": "SAP Business One licence optimisation",
-      "summary": "Scores every SAP B1 user by activity, then recommends downgrade, exchange, or retire — validated against your actual contract before anything is approved. PDF and XLSX reports ready for your renewal conversation.",
+      "summary": "Scores every SAP B1 user by activity, then recommends downgrade, exchange, or retire - validated against your actual contract before anything is approved. PDF and XLSX reports ready for your renewal conversation.",
       "url": "https://licenses.vergent.co.ke",
       "linkLabel": "Open LicenceOptimiser",
       "status": "Beta"

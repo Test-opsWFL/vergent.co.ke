@@ -1,7 +1,7 @@
 ---
 title: Security & compliance
 tagline: A defensible posture aligned to SABSA, ITIL, COBIT, and whatever framework your auditors actually use.
-summary: Architecture reviews, configuration hardening, monitoring, and the documentation regulators expect — delivered into production, not parked in a slide deck.
+summary: Architecture reviews, configuration hardening, monitoring, and the documentation regulators expect - delivered into production, not parked in a slide deck.
 group: security-compliance
 order: 2
 icon: shield

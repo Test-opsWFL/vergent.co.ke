@@ -15,7 +15,7 @@
     --brand-blue:  1 82 197;     /* #0152C5 */
   }
 
-  /* Dark mode — class-based so the manual toggle wins over system pref.
+  /* Dark mode - class-based so the manual toggle wins over system pref.
      The inline script in Base.astro applies `.dark` to <html> based on
      localStorage first, falling back to prefers-color-scheme. */
   .dark {
@@ -165,7 +165,7 @@
     filter: invert(0.92) hue-rotate(180deg) brightness(1.05);
   }
 
-  /* Vergent full-logo light/dark swap — class-based so the manual toggle
+  /* Vergent full-logo light/dark swap - class-based so the manual toggle
      in the header reaches them. Default: show light; in `.dark` show dark. */
   .logo-dark { display: none; }
   .dark .logo-light { display: none; }

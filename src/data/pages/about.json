@@ -2,7 +2,7 @@
   "hero": {
     "eyebrow": "About Vergent",
     "headline": "We build for what comes next.",
-    "subhead": "A B2B technology consultancy steering clients through the next generation of software, security, and Agentic AI — bridging the gap between business and technology, not standing between them.",
+    "subhead": "A B2B technology consultancy steering clients through the next generation of software, security, and Agentic AI - bridging the gap between business and technology, not standing between them.",
     "highlights": [
       { "value": "4",   "label": "Practices" },
       { "value": "5",   "label": "Delivery countries" },
@@ -18,7 +18,7 @@
     "title": "A B2B technology consultancy with delivery in five countries.",
     "paragraphs": [
       "Vergent Technology Solutions Ltd. helps clients leverage new technologies to competitive advantage and supports them through software development, cloud transformation, security, and Agentic AI work.",
-      "Our capabilities are uniquely distinguished by where we deliver from. With teams across Kenya, the UAE, Kyrgyzstan, the Philippines, and India, we run continuous engagements with senior people in your time zone — not handoff queues across vendors."
+      "Our capabilities are uniquely distinguished by where we deliver from. With teams across Kenya, the UAE, Kyrgyzstan, the Philippines, and India, we run continuous engagements with senior people in your time zone - not handoff queues across vendors."
     ],
     "footprint": [
       { "country": "Kenya",       "city": "Nairobi",   "role": "HQ · architecture · delivery" },
@@ -31,7 +31,7 @@
   "expertise": {
     "eyebrow": "Expertise",
     "title": "Comprehensive expertise across the platforms enterprises rely on.",
-    "intro": "From legacy ERP migrations to agentic systems running in production — six places where most of our work concentrates.",
+    "intro": "From legacy ERP migrations to agentic systems running in production - six places where most of our work concentrates.",
     "items": [
       {
         "title": "Microsoft cloud and Dynamics",
@@ -40,7 +40,7 @@
       },
       {
         "title": "Oracle licence rationalisation",
-        "body": "Strategic license management for Oracle environments — fewer surprises at audit time, lower spend the rest of the year.",
+        "body": "Strategic license management for Oracle environments - fewer surprises at audit time, lower spend the rest of the year.",
         "icon": "shield"
       },
       {
@@ -55,12 +55,12 @@
       },
       {
         "title": "Software licensing assessment",
-        "body": "Maximise the value of your software licenses while ensuring compliance — across Microsoft, Oracle, SAP, and the long tail.",
+        "body": "Maximise the value of your software licenses while ensuring compliance - across Microsoft, Oracle, SAP, and the long tail.",
         "icon": "shield"
       },
       {
         "title": "Agentic AI in production",
-        "body": "Design, build, and operate the agents that increasingly run alongside enterprise systems — with evals, observability, and governance built in.",
+        "body": "Design, build, and operate the agents that increasingly run alongside enterprise systems - with evals, observability, and governance built in.",
         "icon": "spark"
       }
     ]
@@ -68,14 +68,14 @@
   "approach": {
     "eyebrow": "How we work",
     "title": "Embedded delivery, accountable to outcomes.",
-    "intro": "Six disciplines that define how Vergent shows up — across every practice and every engagement shape.",
+    "intro": "Six disciplines that define how Vergent shows up - across every practice and every engagement shape.",
     "disciplines": [
-      { "title": "Reference architecture",            "summary": "End-to-end designs across cloud, security, data, and agentic systems — frameworks-aligned and audit-ready." },
-      { "title": "Production & eval engineering",     "summary": "CI/CD, observability, and the eval suites that keep platforms — and the agents on top of them — reliable in production." },
+      { "title": "Reference architecture",            "summary": "End-to-end designs across cloud, security, data, and agentic systems - frameworks-aligned and audit-ready." },
+      { "title": "Production & eval engineering",     "summary": "CI/CD, observability, and the eval suites that keep platforms - and the agents on top of them - reliable in production." },
       { "title": "Cyber AIOps & SOC",                 "summary": "AI-driven detection, response, and continuous control monitoring across hybrid and multi-cloud estates." },
       { "title": "Licence & cloud cost rationalisation", "summary": "IT licence audits and cloud-spend reviews that reclaim budget and surface contract risk before renewal." },
-      { "title": "Delivery & vendor management",      "summary": "A single accountable owner across SIs, internal teams, and external partners — through go-live and beyond." },
-      { "title": "Sourcing & contracts",              "summary": "Supplier selection and negotiation — leverage on your side of the table." }
+      { "title": "Delivery & vendor management",      "summary": "A single accountable owner across SIs, internal teams, and external partners - through go-live and beyond." },
+      { "title": "Sourcing & contracts",              "summary": "Supplier selection and negotiation - leverage on your side of the table." }
     ]
   }
 }

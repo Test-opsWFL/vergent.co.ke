@@ -13,11 +13,11 @@ interface Props {
 
 const {
   title,
-  description = `${site.brand.fullName} — ${site.brand.tagline}. Enterprise IT consulting and software products across cloud, security, and modernization. Offices in Nairobi, Dubai, and Bishkek.`,
+  description = `${site.brand.fullName} - ${site.brand.tagline}. Enterprise IT consulting and software products across cloud, security, and modernization. Offices in Nairobi, Dubai, and Bishkek.`,
   ogImage = '/og-image.png',
 } = Astro.props;
 
-const fullTitle = title ? `${title} — ${site.brand.fullName}` : `${site.brand.fullName} — ${site.brand.tagline}`;
+const fullTitle = title ? `${title} - ${site.brand.fullName}` : `${site.brand.fullName} - ${site.brand.tagline}`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 ---
 
