@@ -1,3 +1,5 @@
+// Copyright © 2026 Vergent Technology Solutions Ltd. All rights reserved.
+// Proprietary and confidential - see LICENSE for terms.
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],

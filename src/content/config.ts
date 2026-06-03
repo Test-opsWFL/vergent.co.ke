@@ -1,3 +1,5 @@
+// Copyright © 2026 Vergent Technology Solutions Ltd. All rights reserved.
+// Proprietary and confidential - see LICENSE for terms.
 import { defineCollection, z } from 'astro:content';
 
 const services = defineCollection({

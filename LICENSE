@@ -1,0 +1,178 @@
+VERGENT TECHNOLOGY SOLUTIONS LTD
+PROPRIETARY SOURCE-CODE LICENCE — CARBON INTELLIGENCE PROGRAMME PLATFORM
+
+Copyright © 2026 Vergent Technology Solutions Ltd. All rights reserved.
+Nairobi, Kenya. info@vergent.co.ke.
+
+
+1. DEFINITIONS
+
+   "Software" means the source code, compiled artefacts, documentation,
+   configuration files, schema definitions, generated PDFs, and any
+   accompanying materials contained in this distribution. It includes,
+   without limitation, the Vergent Technology Solutions platform, its
+   data model, its carbon and endowment computation libraries, its
+   slipsheets, the methodology memo, the buyer-briefing materials, the
+   offset-contract template, and the buyer-benchmark and integrity-clause
+   framework.
+
+   "Licensor" / "Vergent" means Vergent Technology Solutions Ltd, a
+   limited liability company incorporated in the Republic of Kenya, the
+   sole owner of all copyright and other intellectual property rights
+   subsisting in the Software.
+
+   "Programme Operator" means Vergent Technology Solutions Ltd, a
+   charitable trust registered in Kenya, which operates the Carbon
+   Intelligence Programme under a separate written agreement with the
+   Licensor and is authorised to distribute the Software to Authorised
+   Recipients in furtherance of that programme.
+
+   "Authorised Recipient" means a natural or legal person to whom the
+   Licensor or the Programme Operator has, in writing, granted access to
+   the Software for an identified purpose under a separate written
+   agreement (the "Recipient Agreement").
+
+
+2. OWNERSHIP
+
+   All right, title and interest in and to the Software, including all
+   intellectual property rights therein, are and shall remain the
+   exclusive property of Vergent Technology Solutions Ltd. The Programme
+   Operator and any Authorised Recipient acquire no ownership interest
+   in the Software by virtue of receiving, evaluating, or operating it.
+
+
+3. GRANT
+
+   Subject to the terms below, Vergent grants each Authorised Recipient a
+   non-exclusive, non-transferable, revocable, royalty-free licence to:
+
+   (a) view, evaluate, and audit the Software for the purpose stated in
+       the Recipient Agreement;
+
+   (b) run the Software on infrastructure controlled by the Authorised
+       Recipient for that same purpose;
+
+   (c) make modifications strictly to enable evaluation under (a) or
+       running under (b), provided that those modifications are not
+       redistributed outside the Authorised Recipient's organisation
+       without separate written consent from Vergent.
+
+
+4. PROHIBITED ACTS
+
+   Except with the prior written consent of Vergent, the Authorised
+   Recipient shall NOT:
+
+   (a) copy or redistribute the Software, in whole or in part, to any
+       third party (including affiliates not covered by the Recipient
+       Agreement);
+
+   (b) sublicense, lease, lend, or make the Software available as a
+       service to any third party;
+
+   (c) use the Software to develop, train, or operate any product or
+       service that competes with the Vergent Technology Solutions;
+
+   (d) remove, alter, or obscure any copyright, trademark, or attribution
+       notice contained in the Software, including the per-file
+       "Copyright © 2026 Vergent Technology Solutions Ltd. Proprietary."
+       headers;
+
+   (e) reverse-engineer the Software to extract its data model,
+       methodology assumptions, or pricing parameters for any purpose
+       other than the stated evaluation; or
+
+   (f) use the Software in any manner that would bring Vergent, the
+       Programme Operator, their respective directors, trustees,
+       partners, or beneficiary communities into disrepute.
+
+
+5. RECIPIENT OBLIGATIONS
+
+   The Authorised Recipient shall:
+
+   (a) treat the Software as confidential information, with no less care
+       than it takes with its own confidential information of equivalent
+       sensitivity;
+
+   (b) restrict access to the Software to its employees, officers, and
+       professional advisers who have a legitimate need to access it and
+       who are bound by equivalent confidentiality obligations;
+
+   (c) on termination of the Recipient Agreement, return or destroy all
+       copies of the Software in its possession and confirm the same in
+       writing within thirty (30) days.
+
+
+6. NO WARRANTY
+
+   THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY
+   OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+   WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR
+   NON-INFRINGEMENT. VERGENT DOES NOT WARRANT THAT THE SOFTWARE IS
+   ERROR-FREE OR THAT ITS OPERATION WILL BE UNINTERRUPTED.
+
+   The carbon-credit estimates, endowment projections, pricing bands,
+   baseline counterfactuals, and operational-budget line items contained
+   in the Software are indicative, pre-validation working values. They
+   do not constitute issued carbon credits, an offer to sell credits, a
+   financial recommendation, or a binding commitment of any kind by
+   either Vergent or the Programme Operator.
+
+
+7. LIMITATION OF LIABILITY
+
+   To the maximum extent permitted by law, Vergent's aggregate liability
+   to the Authorised Recipient arising out of or in connection with this
+   licence and the Software shall not exceed the fees paid by the
+   Authorised Recipient to Vergent for the Software in the twelve months
+   immediately preceding the event giving rise to the claim, or, where
+   no such fees have been paid, KES 100,000 (one hundred thousand
+   Kenyan shillings). Vergent shall not be liable for any indirect,
+   incidental, consequential, special, or punitive damages.
+
+
+8. THIRD-PARTY COMPONENTS
+
+   The Software incorporates open-source components, each licensed
+   under its own terms. A non-exhaustive list of significant components
+   and their licences is provided in NOTICE.md. Those components remain
+   subject to their respective licences. Nothing in this licence
+   purports to alter the terms applicable to those components.
+
+
+9. TERMINATION
+
+   Vergent may terminate this licence at any time on written notice on
+   a material breach of these terms, including any unauthorised
+   redistribution. Termination does not relieve the Authorised
+   Recipient of obligations under sections 4, 5, 6, and 7 that by their
+   nature survive termination.
+
+
+10. GOVERNING LAW
+
+    This licence is governed by the laws of the Republic of Kenya. The
+    parties submit to the exclusive jurisdiction of the courts of
+    Nairobi for the resolution of any dispute arising under or in
+    connection with this licence.
+
+
+11. CONTACT
+
+    All correspondence regarding this licence, including requests for
+    additional permissions, evaluation extensions, or redistribution
+    consent, should be directed to:
+
+        Vergent Technology Solutions Ltd
+        Nairobi, Kenya
+        info@vergent.co.ke
+
+    Operational correspondence regarding the Carbon Intelligence
+    Programme itself should be directed to:
+
+        Vergent Technology Solutions Ltd
+        Karen, Nairobi, Kenya
+        info@vergent.co.ke
+        www.vergent.co.ke
