@@ -46,6 +46,20 @@ const intro = site.productsIntro;
             ) : p.linkLabel ? (
               <span class="mt-4 text-sm font-medium text-muted">{p.linkLabel}</span>
             ) : null}
+            {/* Optional secondary CTA — e.g. "Start an engagement" for products
+                with a self-serve intake form. Rendered as a small action link
+                below the primary "Open" link so the card layout still works. */}
+            {p.ctaUrl && (
+              <a
+                href={p.ctaUrl}
+                target="_blank"
+                rel="noopener"
+                class="mt-1.5 inline-flex items-center gap-1.5 text-xs font-medium text-accent hover:underline"
+              >
+                {p.ctaLabel ?? 'Get started'}
+                <span aria-hidden="true">→</span>
+              </a>
+            )}
           </article>
         ))}
       </div>

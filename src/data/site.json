@@ -12,10 +12,22 @@
     "href": "https://app.vergent.co.ke"
   },
   "nav": [
-    { "label": "About",    "href": "/about" },
-    { "label": "Products", "href": "/#products" },
-    { "label": "Services", "href": "/services" },
-    { "label": "Contact",  "href": "/contact" }
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Products",
+      "href": "/#products"
+    },
+    {
+      "label": "Services",
+      "href": "/services"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
   ],
   "ctaLabel": "Let's talk",
   "contact": {
@@ -25,48 +37,108 @@
     "linkedin": "https://www.linkedin.com/company/vergent-technology/"
   },
   "offices": [
-    { "city": "Nairobi", "country": "Kenya" },
-    { "city": "Dubai",   "country": "UAE" },
-    { "city": "Bishkek", "country": "Kyrgyzstan" }
+    {
+      "city": "Nairobi",
+      "country": "Kenya"
+    },
+    {
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    {
+      "city": "Bishkek",
+      "country": "Kyrgyzstan"
+    }
   ],
-  "supportPresence": ["Philippines", "India"],
+  "supportPresence": [
+    "Philippines",
+    "India"
+  ],
   "capabilities": [
     {
       "title": "Software & data",
       "summary": "Build, modernise, integrate.",
-      "items": ["Custom development", "ERP & cloud migrations", "Data platforms"]
+      "items": [
+        "Custom development",
+        "ERP & cloud migrations",
+        "Data platforms"
+      ]
     },
     {
       "title": "Cyber AIOps",
       "summary": "Detect, respond, observe.",
-      "items": ["24×7 SOC operations", "AI-driven monitoring", "Incident response"]
+      "items": [
+        "24\u00d77 SOC operations",
+        "AI-driven monitoring",
+        "Incident response"
+      ]
     },
     {
       "title": "Security & compliance",
       "summary": "Architect, audit, defend.",
-      "items": ["Security architecture", "Audit & assurance", "Frameworks & policy"]
+      "items": [
+        "Security architecture",
+        "Audit & assurance",
+        "Frameworks & policy"
+      ]
     },
     {
       "title": "Agentic AI",
       "summary": "Design, build, govern.",
-      "items": ["Agent & workflow design", "LLM-native development", "Production deployment & evals"]
+      "items": [
+        "Agent & workflow design",
+        "LLM-native development",
+        "Production deployment & evals"
+      ]
     }
   ],
   "partners": [
-    { "name": "Cynet",     "logo": "/partners/cynet.png",     "url": "https://www.cynet.com" },
-    { "name": "Centerity", "logo": "/partners/centerity.png", "url": "https://www.centerity.com" },
-    { "name": "Dreamvise", "logo": "/partners/dreamvise.png", "url": "https://dreamvise.com" },
-    { "name": "SysAid",    "logo": "/partners/sysaid.png",    "url": "https://www.sysaid.com" }
+    {
+      "name": "Cynet",
+      "logo": "/partners/cynet.png",
+      "url": "https://www.cynet.com"
+    },
+    {
+      "name": "Centerity",
+      "logo": "/partners/centerity.png",
+      "url": "https://www.centerity.com"
+    },
+    {
+      "name": "Dreamvise",
+      "logo": "/partners/dreamvise.png",
+      "url": "https://dreamvise.com"
+    },
+    {
+      "name": "SysAid",
+      "logo": "/partners/sysaid.png",
+      "url": "https://www.sysaid.com"
+    }
   ],
   "specialisms": [
-    { "name": "Microsoft" },
-    { "name": "Oracle" },
-    { "name": "SAP" },
-    { "name": "Dynamics 365" },
-    { "name": "NetSuite" },
-    { "name": "Sage" },
-    { "name": "AWS" },
-    { "name": "Azure" }
+    {
+      "name": "Microsoft"
+    },
+    {
+      "name": "Oracle"
+    },
+    {
+      "name": "SAP"
+    },
+    {
+      "name": "Dynamics 365"
+    },
+    {
+      "name": "NetSuite"
+    },
+    {
+      "name": "Sage"
+    },
+    {
+      "name": "AWS"
+    },
+    {
+      "name": "Azure"
+    }
   ],
   "productsIntro": "Beyond consulting engagements, Vergent ships its own software under the V/ergent name - built for the audit, security, and assurance work our clients face every quarter.",
   "products": [
@@ -77,7 +149,9 @@
       "summary": "Continuous configuration and security audit for SAP S/4HANA, Oracle Fusion, Dynamics 365, NetSuite, Sage Intacct, Sage X3, AWS, and Azure. 520+ checks, live connectors, defensible reports.",
       "url": "https://app.vergent.co.ke",
       "linkLabel": "Open V/ergent",
-      "status": "Live"
+      "status": "Live",
+      "ctaUrl": "https://app.vergent.co.ke/onboarding/intake",
+      "ctaLabel": "Start an engagement"
     },
     {
       "markPrefix": "Cyber",
